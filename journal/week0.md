@@ -39,7 +39,7 @@
 - Using CloudShell
 <img width="960" alt="03 HW HARD - Using CloudShell" src="https://user-images.githubusercontent.com/64080430/218322641-194eec0d-d927-47a8-a703-3226571983a6.png">
 - Conceptual Architecture Diagram or your Napkins
-  - PENDING. Not sure if this should be an original diagram as I'm not well-versed in the web dev/cloud blocks and how each works/interacts
+  * PENDING. Not sure if this should be an original diagram as I'm not well-versed in the web dev/cloud blocks and how each works/interacts
 
 ### Stretch
 
