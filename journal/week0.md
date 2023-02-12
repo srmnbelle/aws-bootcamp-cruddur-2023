@@ -20,6 +20,10 @@
 - Created an IAM user credentials
 - Introduced to AWS Cloudshell
   - CLI Commands Reference https://docs.aws.amazon.com/cli/latest/reference/
+- Installed CLI Commands to Gitpod environment
+  - Tested `aws sts get-caller-identity` and saved credentials to Gitpod
+- Recreated AWS Budget using Gitpod CLI Commands
+- Created SNS Topic (with pending confirmation from email) and Cloudwatch Alarm
 
 ## Assignments
 
