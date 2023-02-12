@@ -31,13 +31,13 @@
 ### Hard
 
 - Set a Billing alarm
-  ![Alt text](vscode-local:/c%3A/Users/belle/OneDrive/Documents/Personal/AWS%20Bootcamp/Week%200%20Assignments/00%20HW%20HARD%20-%20Set%20a%20Billing%20alarm.png)
+<img width="960" alt="00 HW HARD - Set a Billing alarm" src="https://user-images.githubusercontent.com/64080430/218322602-1f812377-ad99-49ce-a482-8796229792a5.png">
 - Set a AWS Budget
-  ![Alt text](vscode-local:/c%3A/Users/belle/OneDrive/Documents/Personal/AWS%20Bootcamp/Week%200%20Assignments/01%20HW%20HARD%20-%20Set%20a%20AWS%20Budget.png)
+<img width="960" alt="01 HW HARD - Set a AWS Budget" src="https://user-images.githubusercontent.com/64080430/218322612-8c2aaba2-9e99-4721-bec9-b3646f9b5565.png">
 - Generating AWS Credentials
-  ![Alt text](vscode-local:/c%3A/Users/belle/OneDrive/Documents/Personal/AWS%20Bootcamp/Week%200%20Assignments/02%20HW%20HARD%20-%20Generating%20AWS%20Credentials.png)
+<img width="960" alt="02 HW HARD - Generating AWS Credentials" src="https://user-images.githubusercontent.com/64080430/218322618-33da8522-1414-4729-84c2-259fcc086f0e.png">
 - Using CloudShell
-  ![Alt text](vscode-local:/c%3A/Users/belle/OneDrive/Documents/Personal/AWS%20Bootcamp/Week%200%20Assignments/03%20HW%20HARD%20-%20Using%20CloudShell.png)
+<img width="960" alt="03 HW HARD - Using CloudShell" src="https://user-images.githubusercontent.com/64080430/218322641-194eec0d-d927-47a8-a703-3226571983a6.png">
 - Conceptual Architecture Diagram or your Napkins
   - PENDING. Not sure if this should be an original diagram as I'm not well-versed in the web dev/cloud blocks and how each works/interacts
 
