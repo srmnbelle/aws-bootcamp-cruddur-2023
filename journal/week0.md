@@ -1,6 +1,6 @@
 # Week 0 — Billing and Architecture
 
-## Lectures
+## LECTURES
 
 ### Live Stream | [Free AWS Cloud Project Bootcamp - Week 0 - Billing and Architecture](https://www.youtube.com/watch?v=SG8blanhAOg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=11)
 
@@ -10,10 +10,6 @@
 ### Pre-recorded | [AWS Bootcamp Week 0 - Pricing Basics and Free tier](https://www.youtube.com/watch?v=OVw3RrlP-sI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=9)
 
 - From Chirag, I learned about the overview of different AWS pricing modules and the features available for free tier accounts. I also learned and done setting up the billing alerts as instructed in the video.
-
-### Pre-recorded | [AWS Organizations & AWS IAM Tutorial For Beginners - Cloud BootCamp - Week 0](https://www.youtube.com/watch?v=4EMWBYVggQI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=13)
-
--
 
 ### Pre-recorded | [Week 0 - Generate Credentials, AWS CLI, Budget and Billing Alarm via CLI](https://www.youtube.com/watch?v=OdUnNuKylHg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=13)
 
@@ -26,9 +22,21 @@
 - Recreated AWS Budget using Gitpod CLI Commands
 - Created SNS Topic (with pending confirmation from email) and Cloudwatch Alarm
 
-## Assignments
+### Pre-recorded | [AWS Organizations & AWS IAM Tutorial For Beginners - Cloud BootCamp - Week 0](https://www.youtube.com/watch?v=4EMWBYVggQI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=13)
 
-### Required
+-
+
+### Pre-recorded | [Week 0 - Lucid Charts Lets Recreate the Cruddur Logical Diagram ](https://www.youtube.com/watch?v=K6FDrI_tz0k&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=18)
+
+-
+
+### Pre-recorded | [Week 0 - Homework Idea (Well Architected Tool](https://www.youtube.com/watch?v=i-hOfAJb3cE&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=17)
+
+-
+
+## ASSIGNMENTS
+
+### REQUIRED
 
 #### Set a Billing alarm
 <img width="960" alt="00 HW HARD - Set a Billing alarm" src="https://user-images.githubusercontent.com/64080430/218322602-1f812377-ad99-49ce-a482-8796229792a5.png">
@@ -45,7 +53,7 @@
 #### Conceptual Architecture Diagram or your Napkins
 - PENDING. Not sure if this should be an original diagram as I'm not well-versed in the web dev/cloud blocks and how each works/interacts
 
-### Challenges
+### CHALLENGES
 
 #### Destroy your root account credentials, Set MFA, IAM role
 - PENDING
