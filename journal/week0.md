@@ -28,19 +28,34 @@
 
 ## Assignments
 
-### Hard
+### Required
 
-- Set a Billing alarm
+#### Set a Billing alarm
 <img width="960" alt="00 HW HARD - Set a Billing alarm" src="https://user-images.githubusercontent.com/64080430/218322602-1f812377-ad99-49ce-a482-8796229792a5.png">
-- Set a AWS Budget
+
+#### Set a AWS Budget
 <img width="960" alt="01 HW HARD - Set a AWS Budget" src="https://user-images.githubusercontent.com/64080430/218322612-8c2aaba2-9e99-4721-bec9-b3646f9b5565.png">
-- Generating AWS Credentials
+
+#### Generating AWS Credentials
 <img width="960" alt="02 HW HARD - Generating AWS Credentials" src="https://user-images.githubusercontent.com/64080430/218322618-33da8522-1414-4729-84c2-259fcc086f0e.png">
-- Using CloudShell
+
+#### Using CloudShell
 <img width="960" alt="03 HW HARD - Using CloudShell" src="https://user-images.githubusercontent.com/64080430/218322641-194eec0d-d927-47a8-a703-3226571983a6.png">
-- Conceptual Architecture Diagram or your Napkins
-  * PENDING. Not sure if this should be an original diagram as I'm not well-versed in the web dev/cloud blocks and how each works/interacts
 
-### Stretch
+#### Conceptual Architecture Diagram or your Napkins
+- PENDING. Not sure if this should be an original diagram as I'm not well-versed in the web dev/cloud blocks and how each works/interacts
 
--
+### Challenges
+
+#### Destroy your root account credentials, Set MFA, IAM role
+- PENDING
+#### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
+- PENDING
+#### Review all the questions of each pillars in the Well Architected Tool (No specialized lens)
+- PENDING
+#### Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts
+- PENDING
+#### Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility. 
+- PENDING
+#### Open a support ticket and request a service limit
+- PENDING
