@@ -61,8 +61,7 @@
 
 #### Generating AWS Credentials
 
-<img width="960" alt="02 HW HARD - Generating AWS Credentials alt" src="https://user-images.githubusercontent.com/64080430/218746669-bb124a71-9977-4a4e-80e6-3d9deee59359.png">
-
+<img width="960" alt="02 HW HARD - Generating AWS Credentials alt" src="https://user-images.githubusercontent.com/64080430/218747908-7dc2874a-3da6-49a3-aac6-57db500b43c9.png">
 
 #### Install AWS CLI
 <img width="960" alt="04 install cli" src="https://user-images.githubusercontent.com/64080430/218744631-594b3ecf-c44e-4a56-9028-4201fca032b3.png">
@@ -79,8 +78,7 @@
 
 #### Destroy your root account credentials, Set MFA, IAM role
 
-<img width="960" alt="setup iam" src="https://user-images.githubusercontent.com/64080430/218746749-ae5386e7-dfb8-4bbc-8a34-59ed149eacd5.png">
-
+<img width="960" alt="setup iam" src="https://user-images.githubusercontent.com/64080430/218747809-f602b67b-a2e8-441e-b3ee-7535bb7d2f74.png">
 
 #### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
 
