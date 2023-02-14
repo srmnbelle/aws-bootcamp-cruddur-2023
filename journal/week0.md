@@ -45,22 +45,28 @@
 #### Recreate Conceptual Diagram in Lucid Charts or on a Napkin
 
 - [Conceptual Diagram in Lucid Charts](https://lucid.app/lucidchart/c88c4d16-618d-4905-9987-71cf53745b04/edit?viewport_loc=-864%2C-212%2C1853%2C923%2C0_0&invitationId=inv_18ac208a-35fa-4dc6-99bb-8a6020d22915)
+![Cruddr HW Diagrams - Livestream Conceptual Diagram](https://user-images.githubusercontent.com/64080430/218744337-07452ce5-a22d-498b-840d-27ed541b4d3a.jpeg)
 
 #### Recreate Logical Architectual Diagram in Lucid Charts
 
 - [Logical Diagram in Lucid Charts](https://lucid.app/lucidchart/c88c4d16-618d-4905-9987-71cf53745b04/edit?viewport_loc=-669%2C-435%2C1365%2C680%2Cwt8w7ByHRSOc&invitationId=inv_18ac208a-35fa-4dc6-99bb-8a6020d22915)
+![Cruddr HW Diagrams - Pre-recorded Logical Diagram](https://user-images.githubusercontent.com/64080430/218744298-fd1fd9fe-694f-422e-b548-23b39fe8aaae.jpeg)
 
 #### Create an Admin User
+<img width="960" alt="05 create user admin" src="https://user-images.githubusercontent.com/64080430/218744514-6d800f04-2671-48de-a75e-652baa1e5ad6.png">
 
 #### Using CloudShell
 
-<img width="960" alt="03 HW HARD - Using CloudShell" src="https://user-images.githubusercontent.com/64080430/218322641-194eec0d-d927-47a8-a703-3226571983a6.png">
+<img width="960" alt="03 HW HARD - Using CloudShell alt" src="https://user-images.githubusercontent.com/64080430/218746708-106589db-b621-406e-b419-23b16d25d1a1.png">
+
 
 #### Generating AWS Credentials
 
-<img width="960" alt="02 HW HARD - Generating AWS Credentials" src="https://user-images.githubusercontent.com/64080430/218322618-33da8522-1414-4729-84c2-259fcc086f0e.png">
+<img width="960" alt="02 HW HARD - Generating AWS Credentials alt" src="https://user-images.githubusercontent.com/64080430/218746669-bb124a71-9977-4a4e-80e6-3d9deee59359.png">
+
 
 #### Install AWS CLI
+<img width="960" alt="04 install cli" src="https://user-images.githubusercontent.com/64080430/218744631-594b3ecf-c44e-4a56-9028-4201fca032b3.png">
 
 #### Set a Billing alarm
 
@@ -73,6 +79,9 @@
 ### CHALLENGES
 
 #### Destroy your root account credentials, Set MFA, IAM role
+
+<img width="960" alt="setup iam" src="https://user-images.githubusercontent.com/64080430/218746749-ae5386e7-dfb8-4bbc-8a34-59ed149eacd5.png">
+
 
 #### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
 
