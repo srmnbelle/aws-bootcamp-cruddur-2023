@@ -22,22 +22,45 @@
 - Recreated AWS Budget using Gitpod CLI Commands
 - Created SNS Topic (with pending confirmation from email) and Cloudwatch Alarm
 
-### Pre-recorded | [AWS Organizations & AWS IAM Tutorial For Beginners - Cloud BootCamp - Week 0](https://www.youtube.com/watch?v=4EMWBYVggQI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=13)
-
-- TO BE WATCHED
-
 ### Pre-recorded | [Week 0 - Lucid Charts Lets Recreate the Cruddur Logical Diagram ](https://www.youtube.com/watch?v=K6FDrI_tz0k&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=18)
 
-- TO BE WATCHED
+- Walkthrough on how to obtain AWS architecture icons and other related resources
+- Recreated the sample logical diagram presented on the livestream
+  - Possible use of other line weight/color/design to denote different process but make sure to include labels
+- Imported SVG file to Lucid Charts; use of Adobe Illustrator to edit SVG file
 
 ### Pre-recorded | [Week 0 - Homework Idea (Well Architected Tool](https://www.youtube.com/watch?v=i-hOfAJb3cE&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=17)
 
 - AWS Well-Architected framework is essentially a document with series of questions to determine if you follow the AWS-recommended best practices, or not.
 - Ideally, for each "checkbox" in each of the questions, you provide proof or explanation on how you met the requirement.
 
+### Pre-recorded | [AWS Organizations & AWS IAM Tutorial For Beginners - Cloud BootCamp - Week 0](https://www.youtube.com/watch?v=4EMWBYVggQI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=13)
+
+- TO BE WATCHED
+
 ## ASSIGNMENTS
 
 ### REQUIRED
+
+#### Recreate Conceptual Diagram in Lucid Charts or on a Napkin
+
+- [Conceptual Diagram in Lucid Charts](https://lucid.app/lucidchart/c88c4d16-618d-4905-9987-71cf53745b04/edit?viewport_loc=-864%2C-212%2C1853%2C923%2C0_0&invitationId=inv_18ac208a-35fa-4dc6-99bb-8a6020d22915)
+
+#### Recreate Logical Architectual Diagram in Lucid Charts
+
+- [Logical Diagram in Lucid Charts](https://lucid.app/lucidchart/c88c4d16-618d-4905-9987-71cf53745b04/edit?viewport_loc=-669%2C-435%2C1365%2C680%2Cwt8w7ByHRSOc&invitationId=inv_18ac208a-35fa-4dc6-99bb-8a6020d22915)
+
+#### Create an Admin User
+
+#### Using CloudShell
+
+<img width="960" alt="03 HW HARD - Using CloudShell" src="https://user-images.githubusercontent.com/64080430/218322641-194eec0d-d927-47a8-a703-3226571983a6.png">
+
+#### Generating AWS Credentials
+
+<img width="960" alt="02 HW HARD - Generating AWS Credentials" src="https://user-images.githubusercontent.com/64080430/218322618-33da8522-1414-4729-84c2-259fcc086f0e.png">
+
+#### Install AWS CLI
 
 #### Set a Billing alarm
 
@@ -47,23 +70,9 @@
 
 <img width="960" alt="01 HW HARD - Set a AWS Budget" src="https://user-images.githubusercontent.com/64080430/218322612-8c2aaba2-9e99-4721-bec9-b3646f9b5565.png">
 
-#### Generating AWS Credentials
-
-<img width="960" alt="02 HW HARD - Generating AWS Credentials" src="https://user-images.githubusercontent.com/64080430/218322618-33da8522-1414-4729-84c2-259fcc086f0e.png">
-
-#### Using CloudShell
-
-<img width="960" alt="03 HW HARD - Using CloudShell" src="https://user-images.githubusercontent.com/64080430/218322641-194eec0d-d927-47a8-a703-3226571983a6.png">
-
-#### Conceptual Architecture Diagram or your Napkins
-
-- PENDING. Not sure if this should be an original diagram as I'm not well-versed in the web dev/cloud blocks and how each works/interacts
-
 ### CHALLENGES
 
 #### Destroy your root account credentials, Set MFA, IAM role
-
-- PENDING
 
 #### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
 
