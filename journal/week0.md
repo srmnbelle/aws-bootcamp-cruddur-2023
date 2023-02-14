@@ -24,46 +24,63 @@
 
 ### Pre-recorded | [AWS Organizations & AWS IAM Tutorial For Beginners - Cloud BootCamp - Week 0](https://www.youtube.com/watch?v=4EMWBYVggQI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=13)
 
--
+- TO BE WATCHED
 
 ### Pre-recorded | [Week 0 - Lucid Charts Lets Recreate the Cruddur Logical Diagram ](https://www.youtube.com/watch?v=K6FDrI_tz0k&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=18)
 
--
+- TO BE WATCHED
 
 ### Pre-recorded | [Week 0 - Homework Idea (Well Architected Tool](https://www.youtube.com/watch?v=i-hOfAJb3cE&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=17)
 
--
+- AWS Well-Architected framework is essentially a document with series of questions to determine if you follow the AWS-recommended best practices, or not.
+- Ideally, for each "checkbox" in each of the questions, you provide proof or explanation on how you met the requirement.
 
 ## ASSIGNMENTS
 
 ### REQUIRED
 
 #### Set a Billing alarm
+
 <img width="960" alt="00 HW HARD - Set a Billing alarm" src="https://user-images.githubusercontent.com/64080430/218322602-1f812377-ad99-49ce-a482-8796229792a5.png">
 
 #### Set a AWS Budget
+
 <img width="960" alt="01 HW HARD - Set a AWS Budget" src="https://user-images.githubusercontent.com/64080430/218322612-8c2aaba2-9e99-4721-bec9-b3646f9b5565.png">
 
 #### Generating AWS Credentials
+
 <img width="960" alt="02 HW HARD - Generating AWS Credentials" src="https://user-images.githubusercontent.com/64080430/218322618-33da8522-1414-4729-84c2-259fcc086f0e.png">
 
 #### Using CloudShell
+
 <img width="960" alt="03 HW HARD - Using CloudShell" src="https://user-images.githubusercontent.com/64080430/218322641-194eec0d-d927-47a8-a703-3226571983a6.png">
 
 #### Conceptual Architecture Diagram or your Napkins
+
 - PENDING. Not sure if this should be an original diagram as I'm not well-versed in the web dev/cloud blocks and how each works/interacts
 
 ### CHALLENGES
 
 #### Destroy your root account credentials, Set MFA, IAM role
+
 - PENDING
+
 #### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
+
 - PENDING
+
 #### Review all the questions of each pillars in the Well Architected Tool (No specialized lens)
+
 - PENDING
+
 #### Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts
+
 - PENDING
-#### Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility. 
+
+#### Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility.
+
 - PENDING
+
 #### Open a support ticket and request a service limit
+
 - PENDING
