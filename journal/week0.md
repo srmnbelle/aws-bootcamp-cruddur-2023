@@ -29,7 +29,7 @@
   - Possible use of other line weight/color/design to denote different process but make sure to include labels
 - Imported SVG file to Lucid Charts; use of Adobe Illustrator to edit SVG file
 
-### Pre-recorded | [Week 0 - Homework Idea (Well Architected Tool](https://www.youtube.com/watch?v=i-hOfAJb3cE&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=17)
+### Pre-recorded | [Week 0 - Homework Idea (Well Architected Tool)](https://www.youtube.com/watch?v=i-hOfAJb3cE&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=17)
 
 - AWS Well-Architected framework is essentially a document with series of questions to determine if you follow the AWS-recommended best practices, or not.
 - Ideally, for each "checkbox" in each of the questions, you provide proof or explanation on how you met the requirement.
@@ -45,12 +45,12 @@
 #### Recreate Conceptual Diagram in Lucid Charts or on a Napkin
 
 - [Conceptual Diagram in Lucid Charts](https://lucid.app/lucidchart/c88c4d16-618d-4905-9987-71cf53745b04/edit?viewport_loc=-864%2C-212%2C1853%2C923%2C0_0&invitationId=inv_18ac208a-35fa-4dc6-99bb-8a6020d22915)
-![Cruddr HW Diagrams - Livestream Conceptual Diagram](https://user-images.githubusercontent.com/64080430/218744337-07452ce5-a22d-498b-840d-27ed541b4d3a.jpeg)
+![Cruddr HW Diagrams - Livestream Conceptual Diagram](https://user-images.githubusercontent.com/64080430/218748367-0ad7b761-8f7b-4a8c-aa64-c079f848d99d.png)
 
 #### Recreate Logical Architectual Diagram in Lucid Charts
 
 - [Logical Diagram in Lucid Charts](https://lucid.app/lucidchart/c88c4d16-618d-4905-9987-71cf53745b04/edit?viewport_loc=-669%2C-435%2C1365%2C680%2Cwt8w7ByHRSOc&invitationId=inv_18ac208a-35fa-4dc6-99bb-8a6020d22915)
-![Cruddr HW Diagrams - Pre-recorded Logical Diagram](https://user-images.githubusercontent.com/64080430/218744298-fd1fd9fe-694f-422e-b548-23b39fe8aaae.jpeg)
+![Cruddr HW Diagrams - Pre-recorded Logical Diagram](https://user-images.githubusercontent.com/64080430/218748372-3032f387-2782-496b-a9f0-e67d98140ab8.png)
 
 #### Create an Admin User
 <img width="960" alt="05 create user admin" src="https://user-images.githubusercontent.com/64080430/218744514-6d800f04-2671-48de-a75e-652baa1e5ad6.png">
