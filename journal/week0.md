@@ -57,8 +57,7 @@
 
 #### Using CloudShell
 
-<img width="960" alt="03 HW HARD - Using CloudShell alt" src="https://user-images.githubusercontent.com/64080430/218746708-106589db-b621-406e-b419-23b16d25d1a1.png">
-
+<img width="960" alt="03 HW HARD - Using CloudShell alt" src="https://user-images.githubusercontent.com/64080430/218747097-a54bfc39-02cd-4254-8807-00c1a0b561e8.png">
 
 #### Generating AWS Credentials
 
