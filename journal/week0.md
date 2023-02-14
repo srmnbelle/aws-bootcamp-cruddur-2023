@@ -36,7 +36,19 @@
 
 ### Pre-recorded | [AWS Organizations & AWS IAM Tutorial For Beginners - Cloud BootCamp - Week 0](https://www.youtube.com/watch?v=4EMWBYVggQI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=13)
 
-- TO BE WATCHED
+- Add MFA to root user to prevent "bad hackers" accessing the most powerful user
+- Create an organization unit to help manage security, cost, billing policies
+  - Recommended: having Management Account (with no resources), Active Account pool, and Standby Account pool
+- Enable AWS Trail to audit "most" of logs
+  - Region Service (huge network) vs Availability Zone (sub network within a region)
+- Create IAM Users
+  - Three types of users: (1) IAM user, (2) system user, (3) federated user
+- Create AWS IAM Roles
+  - Roles: used to assign specific permissions
+  - Policies: defines the permissions; can be applied to users, groups, or roles
+  - Roles and policies go hand-in-hand
+- Enable organization Service Control Policies (SCPs)
+  - [SCP Best Practices](https://github.com/hashishrajan/aws-scp-best-practice-policies/tree/main/AWS%20SCP%20Policies)
 
 ## ASSIGNMENTS
 
@@ -55,6 +67,7 @@
 ![Cruddr HW Diagrams - Pre-recorded Logical Diagram](https://user-images.githubusercontent.com/64080430/218748372-3032f387-2782-496b-a9f0-e67d98140ab8.png)
 
 #### Create an Admin User
+
 <img width="960" alt="05 create user admin" src="https://user-images.githubusercontent.com/64080430/218744514-6d800f04-2671-48de-a75e-652baa1e5ad6.png">
 
 #### Using CloudShell
@@ -66,6 +79,7 @@
 <img width="960" alt="02 HW HARD - Generating AWS Credentials alt" src="https://user-images.githubusercontent.com/64080430/218747908-7dc2874a-3da6-49a3-aac6-57db500b43c9.png">
 
 #### Install AWS CLI
+
 <img width="960" alt="04 install cli" src="https://user-images.githubusercontent.com/64080430/218744631-594b3ecf-c44e-4a56-9028-4201fca032b3.png">
 
 #### Set a Billing alarm
