@@ -1,5 +1,7 @@
 # Week 0 — Billing and Architecture
 
+## **HW Checklist**
+
 ## **LECTURES**
 
 ### Live Stream | [Free AWS Cloud Project Bootcamp - Week 0 - Billing and Architecture](https://www.youtube.com/watch?v=SG8blanhAOg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=11)
