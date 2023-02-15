@@ -9,7 +9,10 @@
 
 ### Pre-recorded | [AWS Bootcamp Week 0 - Pricing Basics and Free tier](https://www.youtube.com/watch?v=OVw3RrlP-sI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=9)
 
-- From Chirag, I learned about the overview of different AWS pricing modules and the features available for free tier accounts. I also learned and done setting up the billing alerts as instructed in the video.
+- From Chirag, I learned about the overview of different AWS pricing modules and the features available for free tier accounts. I also learned and done setting up the billing 
+
+
+s as instructed in the video.
 
 ### Pre-recorded | [Week 0 - Generate Credentials, AWS CLI, Budget and Billing Alarm via CLI](https://www.youtube.com/watch?v=OdUnNuKylHg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=13)
 
@@ -110,7 +113,7 @@
 
 - Setup
   - Create SNS Topic
-    - Create topic: using health-alarm in `TitleHere`
+    - Create topic: using health-alert in `TitleHere`
       ```
       aws sns create-topic --name TitleHere
       ```
