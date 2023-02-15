@@ -129,23 +129,23 @@ s as instructed in the video.
 
   - Open the [Service Health Dashboard](https://status.aws.amazon.com/) or [Amazon EventBridge console](https://console.aws.amazon.com/events/)
   - Configure an [Amazon EventBridge Rule](https://console.aws.amazon.com/events/home#rules/create) and follow the [documentation](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html#creating-event-bridge-events-rule-for-aws-health)
-    1. Define rule detail
+    - Define rule detail
        - Entered `Name` and `Description`. All else default.
 
     <img width="960" alt="step1" src="https://user-images.githubusercontent.com/64080430/219013142-b3c23db4-7be9-4538-a9dc-8bf8b28e302d.png"><br>
 
-    2. Build event pattern
+    - Build event pattern
        - Under **Event pattern**, edited the `Event source`, `AWS service`, `Event type`, the `Specific service(s)`, and the `Specific event type category(s)` as shown in figure below. All else default.
        
     <img width="960" alt="step2" src="https://user-images.githubusercontent.com/64080430/219013179-b5d6ba3d-91c6-45de-93b2-e442bb54f92d.png"><br>
 
-    3. Select target(s)
+    - Select target(s)
        - Selected appropriate `Target types`, `Select a target`, and `Topic` to hookup SNS.
 
     <img width="960" alt="step3" src="https://user-images.githubusercontent.com/64080430/219013245-c08f96dd-a235-4697-9925-513f30724d73.png"><br>
 
-    4. Configure tags: _skipped_<br>
-    5. Review and create: Done!
+    - Configure tags: _skipped_<br>
+    - Review and create: Done!
 
     <img width="960" alt="step4" src="https://user-images.githubusercontent.com/64080430/219013266-0b6dc83b-75a2-4619-a54e-2fb4626badb9.png">
 
