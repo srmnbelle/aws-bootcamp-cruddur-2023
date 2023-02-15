@@ -8,7 +8,7 @@
         },
         "Subscribers": [
             {
-                "Address": "bellesermeno+aws@gmail.com",
+                "Address": "<yourEmail>@gmail.com",
                 "SubscriptionType": "EMAIL"
             }
         ]
