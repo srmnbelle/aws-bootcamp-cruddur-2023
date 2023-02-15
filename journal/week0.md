@@ -1,6 +1,6 @@
 # Week 0 — Billing and Architecture
 
-## LECTURES
+## **LECTURES**
 
 ### Live Stream | [Free AWS Cloud Project Bootcamp - Week 0 - Billing and Architecture](https://www.youtube.com/watch?v=SG8blanhAOg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=11)
 
@@ -49,69 +49,101 @@
   - Roles and policies go hand-in-hand
 - Enable organization Service Control Policies (SCPs)
   - [SCP Best Practices](https://github.com/hashishrajan/aws-scp-best-practice-policies/tree/main/AWS%20SCP%20Policies)
+    <br>
 
-## ASSIGNMENTS
+---
 
-### REQUIRED
+## **ASSIGNMENTS**
 
-#### Recreate Conceptual Diagram in Lucid Charts or on a Napkin
+### Recreate Conceptual Diagram in Lucid Charts or on a Napkin
 
 - [Conceptual Diagram in Lucid Charts](https://lucid.app/lucidchart/c88c4d16-618d-4905-9987-71cf53745b04/edit?viewport_loc=-864%2C-212%2C1853%2C923%2C0_0&invitationId=inv_18ac208a-35fa-4dc6-99bb-8a6020d22915)
 
-![Cruddr HW Diagrams - Livestream Conceptual Diagram](https://user-images.githubusercontent.com/64080430/218748367-0ad7b761-8f7b-4a8c-aa64-c079f848d99d.png)
+![Cruddr HW Diagrams - Livestream Conceptual Diagram](https://user-images.githubusercontent.com/64080430/218748367-0ad7b761-8f7b-4a8c-aa64-c079f848d99d.png)<br>
 
-#### Recreate Logical Architectual Diagram in Lucid Charts
+### Recreate Logical Architectual Diagram in Lucid Charts
 
 - [Logical Diagram in Lucid Charts](https://lucid.app/lucidchart/c88c4d16-618d-4905-9987-71cf53745b04/edit?viewport_loc=-669%2C-435%2C1365%2C680%2Cwt8w7ByHRSOc&invitationId=inv_18ac208a-35fa-4dc6-99bb-8a6020d22915)
 
-![Cruddr HW Diagrams - Pre-recorded Logical Diagram](https://user-images.githubusercontent.com/64080430/218748372-3032f387-2782-496b-a9f0-e67d98140ab8.png)
+![Cruddr HW Diagrams - Pre-recorded Logical Diagram](https://user-images.githubusercontent.com/64080430/218748372-3032f387-2782-496b-a9f0-e67d98140ab8.png)<br>
 
-#### Create an Admin User
+### Create an Admin User
 
-<img width="960" alt="05 create user admin" src="https://user-images.githubusercontent.com/64080430/218744514-6d800f04-2671-48de-a75e-652baa1e5ad6.png">
+<img width="960" alt="05 create user admin" src="https://user-images.githubusercontent.com/64080430/218744514-6d800f04-2671-48de-a75e-652baa1e5ad6.png"><br>
 
-#### Using CloudShell
+### Using CloudShell
 
-<img width="960" alt="03 HW HARD - Using CloudShell alt" src="https://user-images.githubusercontent.com/64080430/218747097-a54bfc39-02cd-4254-8807-00c1a0b561e8.png">
+<img width="960" alt="03 HW HARD - Using CloudShell alt" src="https://user-images.githubusercontent.com/64080430/218747097-a54bfc39-02cd-4254-8807-00c1a0b561e8.png"><br>
 
-#### Generating AWS Credentials
+### Generating AWS Credentials
 
-<img width="960" alt="02 HW HARD - Generating AWS Credentials alt" src="https://user-images.githubusercontent.com/64080430/218747908-7dc2874a-3da6-49a3-aac6-57db500b43c9.png">
+<img width="960" alt="02 HW HARD - Generating AWS Credentials alt" src="https://user-images.githubusercontent.com/64080430/218747908-7dc2874a-3da6-49a3-aac6-57db500b43c9.png"><br>
 
-#### Install AWS CLI
+### Install AWS CLI
 
-<img width="960" alt="04 install cli" src="https://user-images.githubusercontent.com/64080430/218744631-594b3ecf-c44e-4a56-9028-4201fca032b3.png">
+<img width="960" alt="04 install cli" src="https://user-images.githubusercontent.com/64080430/218744631-594b3ecf-c44e-4a56-9028-4201fca032b3.png"><br>
 
-#### Set a Billing alarm
+### Set a Billing alarm
 
-<img width="960" alt="00 HW HARD - Set a Billing alarm" src="https://user-images.githubusercontent.com/64080430/218322602-1f812377-ad99-49ce-a482-8796229792a5.png">
+<img width="960" alt="00 HW HARD - Set a Billing alarm" src="https://user-images.githubusercontent.com/64080430/218322602-1f812377-ad99-49ce-a482-8796229792a5.png"><br>
 
-#### Set a AWS Budget
+### Set a AWS Budget
 
-<img width="960" alt="01 HW HARD - Set a AWS Budget" src="https://user-images.githubusercontent.com/64080430/218322612-8c2aaba2-9e99-4721-bec9-b3646f9b5565.png">
+<img width="960" alt="01 HW HARD - Set a AWS Budget" src="https://user-images.githubusercontent.com/64080430/218322612-8c2aaba2-9e99-4721-bec9-b3646f9b5565.png"><br>
 
-### CHALLENGES
+---
 
-#### Destroy your root account credentials, Set MFA, IAM role
+## **EXTRA CHALLENGES**
 
-<img width="960" alt="setup iam" src="https://user-images.githubusercontent.com/64080430/218747809-f602b67b-a2e8-441e-b3ee-7535bb7d2f74.png">
+### Destroy your root account credentials, Set MFA, IAM role
 
-#### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
+<img width="960" alt="setup iam" src="https://user-images.githubusercontent.com/64080430/218747809-f602b67b-a2e8-441e-b3ee-7535bb7d2f74.png"><br>
+
+### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
+
+- Let's define the terms first:
+
+  - **EventBridge** – provides real-time access to changes in data in AWS services, your own applications, and software as a service (SaaS) applications without writing code[\*](https://aws.amazon.com/eventbridge/faqs/)
+  - **Health Dashboard** – shows reported service events for services across AWS Regions[\*](https://docs.aws.amazon.com/health/latest/ug/aws-health-dashboard-status.html)
+  - **Simple Notification Service (SNS)** – sends notifications two ways, app-to-app and app-to-person[\*](https://aws.amazon.com/sns/)
+  - **"service health issue"** – (I am assumming) this is also what they call "AWS Health events" which can be (1) Public events or (2) Account-specific events[\*](https://docs.aws.amazon.com/health/latest/ug/getting-started-health-dashboard.html#event-types)
+
+- Setup
+  - Create SNS Topic
+    - Create topic
+      ```
+      aws sns create-topic --name billing-alarm
+      ```
+    - Create subscription: using appropriate `TopicARN` and `your@email.com`
+      ```
+      aws sns subscribe \
+          --topic-arn TopicARN \
+          --protocol email \
+          --notification-endpoint your@email.com
+      ```
+  - Open the [Service Health Dashboard](https://status.aws.amazon.com/) or [Amazon EventBridge console](https://console.aws.amazon.com/events/)
+  - Configure an [Amazon EventBridge Rule](https://console.aws.amazon.com/events/home#rules/create) and follow the [documentation](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html#creating-event-bridge-events-rule-for-aws-health)
+    1. Define rule detail
+       - Entered `Name` and `Description`. All else default
+    2. Build event pattern
+       - Under **Event pattern**, edited the `Event source`, `AWS service`, `Event type`, the `Specific service(s)`, and the `Specific event type category(s)` as shown in figure below. All else default.
+    3. Select target(s)
+       - Selected appropriate `Target types`, `Select a target`, and `Topic` to hookup SNS.
+    4. Configure tags: _skipped_
+    5. Review and create: Done!
+
+### Review all the questions of each pillars in the Well Architected Tool (No specialized lens)
 
 - PENDING
 
-#### Review all the questions of each pillars in the Well Architected Tool (No specialized lens)
+### Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts
 
 - PENDING
 
-#### Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts
+### Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility.
 
 - PENDING
 
-#### Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility.
-
-- PENDING
-
-#### Open a support ticket and request a service limit
+### Open a support ticket and request a service limit
 
 - PENDING
