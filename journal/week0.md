@@ -1,6 +1,24 @@
 # Week 0 — Billing and Architecture
 
 ## **HW Checklist**
+- [**REQUIRED**](#assignments)
+  - [x] [Recreate Conceptual Diagram in Lucid Charts or on a Napkin](#recreate-conceptual-diagram-in-lucid-charts-or-on-a-napkin)
+  - [x] [Recreate Logical Architectual Diagram in Lucid Charts](#recreate-logical-architectual-diagram-in-lucid-charts)
+  - [x] [Create an Admin User](#create-an-admin-user)
+  - [x] [Using CloudShell](#using-cloudshell)
+  - [x] [Generating AWS Credentials](#generating-aws-credentials)
+  - [x] [Install AWS CLI](#install-aws-cli)
+  - [x] [Set a Billing alarm](#set-a-billing-alarm)
+  - [x] [Set a AWS Budget](#set-a-aws-budget)
+- [**EXTRA CHALLENGES**](#extra-challenges)
+  - [x] [Destroy your root account credentials, Set MFA, IAM role](#destroy-your-root-account-credentials-set-mfa-iam-role)
+  - [x] [Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.](#use-eventbridge-to-hookup-health-dashboard-to-sns-and-send-notification-when-there-is-a-service-health-issue)
+  - [ ] [Review all the questions of each pillars in the Well Architected Tool (No specialized lens)](#review-all-the-questions-of-each-pillars-in-the-well-architected-tool-no-specialized-lens)
+  - [ ] [Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts](#create-an-architectural-diagram-to-the-best-of-your-ability-the-cicd-logical-pipeline-in-lucid-charts)
+  - [ ] [Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility.](#research-the-technical-and-service-limits-of-specific-services-and-how-they-could-impact-the-technical-path-for-technical-flexibility)
+  - [ ] [Open a support ticket and request a service limit](#open-a-support-ticket-and-request-a-service-limit)
+<br>
+<br>
 
 ## **LECTURES**
 
