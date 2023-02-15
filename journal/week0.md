@@ -18,7 +18,6 @@
   - [ ] [Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility.](#research-the-technical-and-service-limits-of-specific-services-and-how-they-could-impact-the-technical-path-for-technical-flexibility)
   - [ ] [Open a support ticket and request a service limit](#open-a-support-ticket-and-request-a-service-limit)
 <br>
-<br>
 
 ## **LECTURES**
 
