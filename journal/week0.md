@@ -53,8 +53,7 @@ s as instructed in the video.
 - Enable organization Service Control Policies (SCPs)
   - [SCP Best Practices](https://github.com/hashishrajan/aws-scp-best-practice-policies/tree/main/AWS%20SCP%20Policies)
     <br>
-
----
+<br>
 
 ## **ASSIGNMENTS**
 
@@ -93,8 +92,7 @@ s as instructed in the video.
 ### Set a AWS Budget
 
 <img width="960" alt="01 HW HARD - Set a AWS Budget" src="https://user-images.githubusercontent.com/64080430/218322612-8c2aaba2-9e99-4721-bec9-b3646f9b5565.png"><br>
-
----
+<br>
 
 ## **EXTRA CHALLENGES**
 
@@ -114,39 +112,42 @@ s as instructed in the video.
 - Setup
   - Create SNS Topic
     - Create topic: using health-alert in `TitleHere`
+
       ```
       aws sns create-topic --name TitleHere
       ```
+      
     - Create subscription: using appropriate `TopicARN` and `your@email.com`
+
       ```
       aws sns subscribe \
           --topic-arn TopicARN \
           --protocol email \
           --notification-endpoint your@email.com
       ```
- <img width="960" alt="step00" src="https://user-images.githubusercontent.com/64080430/219013087-02d855cd-7fe3-4a0e-a172-a157e969f8de.png">
+    <img width="960" alt="step00" src="https://user-images.githubusercontent.com/64080430/219013087-02d855cd-7fe3-4a0e-a172-a157e969f8de.png"><br>
 
   - Open the [Service Health Dashboard](https://status.aws.amazon.com/) or [Amazon EventBridge console](https://console.aws.amazon.com/events/)
   - Configure an [Amazon EventBridge Rule](https://console.aws.amazon.com/events/home#rules/create) and follow the [documentation](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html#creating-event-bridge-events-rule-for-aws-health)
     1. Define rule detail
        - Entered `Name` and `Description`. All else default.
 
-<img width="960" alt="step1" src="https://user-images.githubusercontent.com/64080430/219013142-b3c23db4-7be9-4538-a9dc-8bf8b28e302d.png">
+    <img width="960" alt="step1" src="https://user-images.githubusercontent.com/64080430/219013142-b3c23db4-7be9-4538-a9dc-8bf8b28e302d.png"><br>
 
     2. Build event pattern
        - Under **Event pattern**, edited the `Event source`, `AWS service`, `Event type`, the `Specific service(s)`, and the `Specific event type category(s)` as shown in figure below. All else default.
        
-<img width="960" alt="step2" src="https://user-images.githubusercontent.com/64080430/219013179-b5d6ba3d-91c6-45de-93b2-e442bb54f92d.png">
+    <img width="960" alt="step2" src="https://user-images.githubusercontent.com/64080430/219013179-b5d6ba3d-91c6-45de-93b2-e442bb54f92d.png"><br>
 
     3. Select target(s)
        - Selected appropriate `Target types`, `Select a target`, and `Topic` to hookup SNS.
 
-<img width="960" alt="step3" src="https://user-images.githubusercontent.com/64080430/219013245-c08f96dd-a235-4697-9925-513f30724d73.png">
+    <img width="960" alt="step3" src="https://user-images.githubusercontent.com/64080430/219013245-c08f96dd-a235-4697-9925-513f30724d73.png"><br>
 
-    4. Configure tags: _skipped_
+    4. Configure tags: _skipped_<br>
     5. Review and create: Done!
 
-<img width="960" alt="step4" src="https://user-images.githubusercontent.com/64080430/219013266-0b6dc83b-75a2-4619-a54e-2fb4626badb9.png">
+    <img width="960" alt="step4" src="https://user-images.githubusercontent.com/64080430/219013266-0b6dc83b-75a2-4619-a54e-2fb4626badb9.png">
 
 ### Review all the questions of each pillars in the Well Architected Tool (No specialized lens)
 
