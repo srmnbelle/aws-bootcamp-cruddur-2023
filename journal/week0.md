@@ -192,4 +192,5 @@ s as instructed in the video.
   - Clicked the orange `Request quota increase` button
   - Entered 10 (arbitrarily) in `Change quota value`
   - Clicked the orange `Request` button
-  - Done! Note: Takes less than 3 minutes to be closed. Also, I was charged ~1USD in my registered card, not sure if that was some authentication or I was really charged for the request quota.
+  - Done! Note: Takes less than 3 minutes to be closed. Also, I was charged ~1USD in my registered card, not sure if that was some authentication or I was really charged for the request quota. <br>
+    <img width="960" alt="servicelimit_closed" src="https://user-images.githubusercontent.com/64080430/219368413-1ab66794-4fb2-430f-bb73-7fefd07d5bcc.png">
