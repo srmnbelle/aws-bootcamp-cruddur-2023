@@ -1,6 +1,7 @@
 # Week 0 — Billing and Architecture
 
 ## **HW Checklist**
+
 - [**REQUIRED**](#assignments)
   - [x] [Recreate Conceptual Diagram in Lucid Charts or on a Napkin](#recreate-conceptual-diagram-in-lucid-charts-or-on-a-napkin)
   - [x] [Recreate Logical Architectual Diagram in Lucid Charts](#recreate-logical-architectual-diagram-in-lucid-charts)
@@ -16,8 +17,8 @@
   - [ ] [Review all the questions of each pillars in the Well Architected Tool (No specialized lens)](#review-all-the-questions-of-each-pillars-in-the-well-architected-tool-no-specialized-lens)
   - [ ] [Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts](#create-an-architectural-diagram-to-the-best-of-your-ability-the-cicd-logical-pipeline-in-lucid-charts)
   - [ ] [Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility.](#research-the-technical-and-service-limits-of-specific-services-and-how-they-could-impact-the-technical-path-for-technical-flexibility)
-  - [ ] [Open a support ticket and request a service limit](#open-a-support-ticket-and-request-a-service-limit)
-<br>
+  - [x] [Open a support ticket and request a service limit](#open-a-support-ticket-and-request-a-service-limit)
+        <br>
 
 ## **LECTURES**
 
@@ -28,8 +29,7 @@
 
 ### Pre-recorded | [AWS Bootcamp Week 0 - Pricing Basics and Free tier](https://www.youtube.com/watch?v=OVw3RrlP-sI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=9)
 
-- From Chirag, I learned about the overview of different AWS pricing modules and the features available for free tier accounts. I also learned and done setting up the billing 
-
+- From Chirag, I learned about the overview of different AWS pricing modules and the features available for free tier accounts. I also learned and done setting up the billing
 
 s as instructed in the video.
 
@@ -72,7 +72,7 @@ s as instructed in the video.
 - Enable organization Service Control Policies (SCPs)
   - [SCP Best Practices](https://github.com/hashishrajan/aws-scp-best-practice-policies/tree/main/AWS%20SCP%20Policies)
     <br>
-<br>
+    <br>
 
 ## **ASSIGNMENTS**
 
@@ -129,13 +129,15 @@ s as instructed in the video.
   - **"service health issue"** – (I am assumming) this is also what they call "AWS Health events" which can be (1) Public events or (2) Account-specific events[\*](https://docs.aws.amazon.com/health/latest/ug/getting-started-health-dashboard.html#event-types)
 
 - Setup
+
   - Create SNS Topic
+
     - Create topic: using health-alert in `TitleHere`
 
       ```
       aws sns create-topic --name TitleHere
       ```
-      
+
     - Create subscription: using appropriate `TopicARN` and `your@email.com`
 
       ```
@@ -144,16 +146,18 @@ s as instructed in the video.
           --protocol email \
           --notification-endpoint your@email.com
       ```
-    <img width="960" alt="step00" src="https://user-images.githubusercontent.com/64080430/219013087-02d855cd-7fe3-4a0e-a172-a157e969f8de.png"><br>
+
+      <img width="960" alt="step00" src="https://user-images.githubusercontent.com/64080430/219013087-02d855cd-7fe3-4a0e-a172-a157e969f8de.png"><br>
 
   - Open the [Service Health Dashboard](https://status.aws.amazon.com/) or [Amazon EventBridge console](https://console.aws.amazon.com/events/)
   - Configure an [Amazon EventBridge Rule](https://console.aws.amazon.com/events/home#rules/create) and follow the [documentation](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html#creating-event-bridge-events-rule-for-aws-health)
+
     - **Define rule detail:** Entered `Name` and `Description`. All else default.
 
     <img width="960" alt="step1" src="https://user-images.githubusercontent.com/64080430/219013142-b3c23db4-7be9-4538-a9dc-8bf8b28e302d.png"><br>
 
     - **Build event pattern:** Under **Event pattern**, edited the `Event source`, `AWS service`, `Event type`, the `Specific service(s)`, and the `Specific event type category(s)` as shown in figure below. All else default.
-       
+
     <img width="960" alt="step2" src="https://user-images.githubusercontent.com/64080430/219013179-b5d6ba3d-91c6-45de-93b2-e442bb54f92d.png"><br>
 
     - **Select target(s):** Selected appropriate `Target types`, `Select a target`, and `Topic` to hookup SNS.
@@ -179,4 +183,13 @@ s as instructed in the video.
 
 ### Open a support ticket and request a service limit
 
-- PENDING
+- Reference: [Service Quotas | Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html)
+- Steps taken (using the AWS Management Console):
+  - From the `Service Quotas` consol
+  - Select `AWS services` in navigation pane
+  - Selected `Amazon Elastic Compute Cloud (Amazon EC2)` because it is the first service mentioned in the flow chart
+  - Selected `All Standard (A, C, D, H, I, M, R, T, Z) Spot Instance Requests` to adjust the "maximum number of vCPUs for all running or requested Standard Spot Instances"[\*](https://us-east-1.console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-34B43A08)
+  - Clicked the orange `Request quota increase` button
+  - Entered 10 (arbitrarily) in `Change quota value`
+  - Clicked the orange `Request` button
+  - Done! Note: Takes less than 3 minutes to be closed. Also, I was charged ~1USD in my registered card, not sure if that was some authentication or I was really charged for the request quota.
