@@ -3,11 +3,11 @@
 ## **HW Checklist**
 
 - [**REQUIRED**](#assignments)
-  - [ ] Document the Notification Endpoint for the OpenAI Document
-  - [ ] Write a Flask Backend Endpoint for Notifications
-  - [ ] Write a React Page for Notifications
-  - [ ] Run DynamoDB Local Container and ensure it works
-  - [ ] Run Postgres Container and ensure it works
+  - [ ] [Document the Notification Endpoint for the OpenAI Document](#document-the-notification-endpoint-for-the-openai-document)
+  - [ ] [Write a Flask Backend Endpoint for Notifications](#write-a-flask-backend-endpoint-for-notifications)
+  - [ ] [Write a React Page for Notifications](#write-a-react-page-for-notifications)
+  - [ ] [Run DynamoDB Local Container and ensure it works](#run-dynamodb-local-container-and-ensure-it-works)
+  - [ ] [Run Postgres Container and ensure it works](#run-postgres-container-and-ensure-it-works)
 - [**EXTRA CHALLENGES**](#extra-challenges)
   - [ ] [Run the dockerfile CMD as an external script](#run-the-dockerfile-cmd-as-an-external-script)
   - [ ] [Push and tag a image to DockerHub](#push-and-tag-a-image-to-dockerhub-they-have-a-free-tier)
