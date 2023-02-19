@@ -50,6 +50,7 @@
 - Multiple Containers
   - Create `docker-compose.yml` to run both back-end and front-end containers
   - Right-click and select `Compose Up`
+  - Note! Use gitpod in web browser to easily unlock ports 3000 and 4567 (can't find that button when running on my desktop VS code - opening localhost:3000 don't show posts)
 
 ### Pre-recorded | [Week 1- After Stream - Commit Your Code](https://www.youtube.com/watch?v=b-idMgFFcpg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=24)
 
