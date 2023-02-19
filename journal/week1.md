@@ -72,7 +72,20 @@
 
 ### Pre-recorded | [Week 1 - Create the notification feature (Backend and Front)](https://www.youtube.com/watch?v=k-_o0cCpksk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=27)
 
-- TO BE WATCHED
+- OpenAPI Swagger
+  - good standard to document APIs
+  - With free-tier API readme generator: https://readme.so/
+- Initial Set-up
+  - `Compose Up` the `docker-compose.yml` - but will show Port 3000 Not Found
+    - `Compose Down` the `docker-compose.yml`
+    - Do `npm i` in `cd frontend-react-js`
+  - Click "Join Now" in the Cruddur web app
+    - Enter your sign up details with "Confirmation Code" as 1234
+- Add endpoint?
+  - Open `openapi-3.0.yml`; library reference: https://spec.openapis.org/oas/v3.1.0
+  - Click `OpenAPI: Add new path`
+  - Edit the line to `/api/activities/notifications`
+  - Pattern content to existing path of `/api/activities/home`
 
 ### Pre-recorded | [Week 1 - DynamoDB and Postgres vs Docker](https://www.youtube.com/watch?v=CbQNMaa6zTg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=28)
 
@@ -81,9 +94,13 @@
 ## **ASSIGNMENTS**
 
 ### Document the Notification Endpoint for the OpenAI Document
+
 ### Write a Flask Backend Endpoint for Notifications
+
 ### Write a React Page for Notifications
+
 ### Run DynamoDB Local Container and ensure it works
+
 ### Run Postgres Container and ensure it works
 
 ## **EXTRA CHALLENGES**
