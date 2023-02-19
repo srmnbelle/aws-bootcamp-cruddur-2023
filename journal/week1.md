@@ -3,7 +3,7 @@
 ## **HW Checklist**
 
 - [**REQUIRED**](#assignments)
-  - [ ] [Document the Notification Endpoint for the OpenAI Document](#document-the-notification-endpoint-for-the-openai-document)
+  - [ ] [Document the Notification Endpoint for the OpenAPI Document](#document-the-notification-endpoint-for-the-openapi-document)
   - [ ] [Write a Flask Backend Endpoint for Notifications](#write-a-flask-backend-endpoint-for-notifications)
   - [ ] [Write a React Page for Notifications](#write-a-react-page-for-notifications)
   - [ ] [Run DynamoDB Local Container and ensure it works](#run-dynamodb-local-container-and-ensure-it-works)
@@ -135,7 +135,7 @@
 
     <DesktopNavigation user={user} active={'notifications'} setPopped={setPopped} />
 
-    
+    title="Notifications"
     ```
 
   - Create the `NotificationsFeedPage.css` but put nothing
@@ -147,7 +147,7 @@
 
 ## **ASSIGNMENTS**
 
-### Document the Notification Endpoint for the OpenAI Document
+### Document the Notification Endpoint for the OpenAPI Document
 
 ### Write a Flask Backend Endpoint for Notifications
 
