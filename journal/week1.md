@@ -104,6 +104,43 @@
     - Create the `notifications_activities.py` file under services folder
       - Copy content from home_activities.py just change class to `NotificationsActivities`
 
+  - Run the address for port 3000 and append `/api/activities/notifications`
+
+- Implement a Frontend UI
+
+  - Open the file `App.js` under /frontend-react-js/src
+
+    - Add the lines
+
+      ```
+      import NotificationsFeedPage from './pages/NotificationsFeedPage';
+
+      {
+        path: "/notifications",
+        element: <NotificationsFeedPage />
+      },
+      ```
+
+  - Create the `NotificationsFeedPage.js`
+
+    - Copy content from `HomeFeedPage.js`
+    - Change the text from "Home" to "Notifications" of the corresponding lines
+
+    ```
+    import './NotificationsFeedPage.css';
+
+    export default function NotificationsFeedPage() {
+
+    const backend_url = `${process.env.REACT_APP_BACKEND_URL}/api/activities/notifications`
+
+    <DesktopNavigation user={user} active={'notifications'} setPopped={setPopped} />
+
+    
+    ```
+
+  - Create the `NotificationsFeedPage.css` but put nothing
+  - Run the address for port 3000 and append `/api/activities/notifications`
+
 ### Pre-recorded | [Week 1 - DynamoDB and Postgres vs Docker](https://www.youtube.com/watch?v=CbQNMaa6zTg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=28)
 
 - TO BE WATCHED
