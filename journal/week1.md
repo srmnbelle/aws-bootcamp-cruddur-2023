@@ -3,9 +3,9 @@
 ## **HW Checklist**
 
 - [**REQUIRED**](#assignments)
-  - [ ] [Document the Notification Endpoint for the OpenAPI Document](#document-the-notification-endpoint-for-the-openapi-document)
-  - [ ] [Write a Flask Backend Endpoint for Notifications](#write-a-flask-backend-endpoint-for-notifications)
-  - [ ] [Write a React Page for Notifications](#write-a-react-page-for-notifications)
+  - [x] [Document the Notification Endpoint for the OpenAPI Document](#document-the-notification-endpoint-for-the-openapi-document)
+  - [x] [Write a Flask Backend Endpoint for Notifications](#write-a-flask-backend-endpoint-for-notifications)
+  - [x] [Write a React Page for Notifications](#write-a-react-page-for-notifications)
   - [ ] [Run DynamoDB Local Container and ensure it works](#run-dynamodb-local-container-and-ensure-it-works)
   - [ ] [Run Postgres Container and ensure it works](#run-postgres-container-and-ensure-it-works)
 - [**EXTRA CHALLENGES**](#extra-challenges)
@@ -148,10 +148,13 @@
 ## **ASSIGNMENTS**
 
 ### Document the Notification Endpoint for the OpenAPI Document
+<img width="960" alt="HW1 notifications" src="https://user-images.githubusercontent.com/64080430/219949125-6f75f2a7-0660-4534-9b1c-d95945a9c247.png">
 
 ### Write a Flask Backend Endpoint for Notifications
+<img width="580" alt="HW1 backend endpoint" src="https://user-images.githubusercontent.com/64080430/219949130-b621c885-ef69-4f63-8d57-1ac87956235a.png">
 
 ### Write a React Page for Notifications
+<img width="859" alt="HW1 frontend endpoint" src="https://user-images.githubusercontent.com/64080430/219949133-bcc0ca54-e50b-4700-bd56-259090a3ae81.png">
 
 ### Run DynamoDB Local Container and ensure it works
 
