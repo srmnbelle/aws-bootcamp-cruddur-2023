@@ -81,11 +81,28 @@
     - Do `npm i` in `cd frontend-react-js`
   - Click "Join Now" in the Cruddur web app
     - Enter your sign up details with "Confirmation Code" as 1234
-- Add endpoint?
+- Add backend endpoint
+
   - Open `openapi-3.0.yml`; library reference: https://spec.openapis.org/oas/v3.1.0
   - Click `OpenAPI: Add new path`
   - Edit the line to `/api/activities/notifications`
   - Pattern content to existing path of `/api/activities/home`
+    - Add description, tags, responses format
+  - Open the `app.py` file
+
+    - Add the lines
+
+      ```
+      from services.notifications_activities import *
+
+      @app.route("/api/activities/notifications", methods=['GET'])
+        def data_notifications():
+        data = NotificationsActivities.run()
+        return data, 200
+      ```
+
+    - Create the `notifications_activities.py` file under services folder
+      - Copy content from home_activities.py just change class to `NotificationsActivities`
 
 ### Pre-recorded | [Week 1 - DynamoDB and Postgres vs Docker](https://www.youtube.com/watch?v=CbQNMaa6zTg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=28)
 
