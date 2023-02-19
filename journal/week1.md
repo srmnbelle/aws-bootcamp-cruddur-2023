@@ -3,9 +3,19 @@
 ## **HW Checklist**
 
 - [**REQUIRED**](#assignments)
-  - [ ] line 1
+  - [ ] Document the Notification Endpoint for the OpenAI Document
+  - [ ] Write a Flask Backend Endpoint for Notifications
+  - [ ] Write a React Page for Notifications
+  - [ ] Run DynamoDB Local Container and ensure it works
+  - [ ] Run Postgres Container and ensure it works
 - [**EXTRA CHALLENGES**](#extra-challenges)
-  - [ ] line 1
+  - [ ] [Run the dockerfile CMD as an external script](#run-the-dockerfile-cmd-as-an-external-script)
+  - [ ] [Push and tag a image to DockerHub](#push-and-tag-a-image-to-dockerhub-they-have-a-free-tier)
+  - [ ] [Use multi-stage building for a Dockerfile build](#use-multi-stage-building-for-a-dockerfile-build)
+  - [ ] [Implement a healthcheck in the V3 Docker compose file](#implement-a-healthcheck-in-the-v3-docker-compose-file)
+  - [ ] [Research best practices of Dockerfiles and implement](#research-best-practices-of-dockerfiles-and-attempt-to-implement-it-in-your-dockerfile)
+  - [ ] [Install Docker on your local machine](#learn-how-to-install-docker-on-your-localmachine-and-get-the-same-containers-running-outside-of-gitpod--codespaces)
+  - [ ] [Launch an EC2 instance and pull a container](#launch-an-ec2-instance-that-has-docker-installed-and-pull-a-container-to-demonstrate-you-can-run-your-own-docker-processes)
 
 ## **LECTURES**
 
@@ -69,6 +79,12 @@
 - TO BE WATCHED
 
 ## **ASSIGNMENTS**
+
+### Document the Notification Endpoint for the OpenAI Document
+### Write a Flask Backend Endpoint for Notifications
+### Write a React Page for Notifications
+### Run DynamoDB Local Container and ensure it works
+### Run Postgres Container and ensure it works
 
 ## **EXTRA CHALLENGES**
 
