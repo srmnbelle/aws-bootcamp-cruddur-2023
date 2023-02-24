@@ -218,7 +218,32 @@
 
 ### Pre-recorded | [Top 10 Docker Container Security Best Practices with Tutorial](https://www.youtube.com/watch?v=OjZz4D0B-cA&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
 
-- TO BE WATCHED
+- Container Security
+  - protecting "compute service"/containers
+  - Unmanaged vs Managed containers
+    - Unmanaged: Docker or containers that run outside the cloud
+    - Managed: ECS, ECR
+- Best Practices
+  - Docker & host config
+    - Update security patches
+    - Non-root user mode from "docker daemon & containers"
+  - Securing images
+    - Images should only include what the application needed
+    - Private vs Public image registry
+  - Secret management
+    - No sensitive data
+  - Data Security
+    - Read-only file system
+  - Application Security
+    - Use "DevSecOps" practices
+    - Test code for vulnerability
+- Docker Compose
+  - Snyk OpenSource Security - to secure dependencies
+- AWS Secret Manager or Hashicorp Vault
+  - to store secrets
+- AWS Inspector or Clair
+  - to scan AMI/ image vulnerabilities?
+- Snyk demo
 
 ### Pre-recorded | [AWS Bootcamp Week 1 - Gitpod, Github Codespaces, AWS Cloud9 and Cloudtrail](https://www.youtube.com/watch?v=OAMHu1NiYoI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
 
