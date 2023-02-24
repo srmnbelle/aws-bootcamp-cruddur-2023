@@ -222,7 +222,16 @@
 
 ### Pre-recorded | [AWS Bootcamp Week 1 - Gitpod, Github Codespaces, AWS Cloud9 and Cloudtrail](https://www.youtube.com/watch?v=OAMHu1NiYoI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
 
-- TO BE WATCHED
+- Gitpod limit
+  - 50 hr/month
+- Github codespaces
+  - 2-core: 60 hr/month
+  - 4-core: 30 hr/month
+  - 8-core: 15 hr/month
+- AWS Cloud9
+  - Uses ec2
+- Cloudtrail
+  - **avoid** using as not needed for the bootcamp
 
 ## **ASSIGNMENTS**
 
