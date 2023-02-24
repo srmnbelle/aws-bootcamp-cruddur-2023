@@ -6,8 +6,8 @@
   - [x] [Document the Notification Endpoint for the OpenAPI Document](#document-the-notification-endpoint-for-the-openapi-document)
   - [x] [Write a Flask Backend Endpoint for Notifications](#write-a-flask-backend-endpoint-for-notifications)
   - [x] [Write a React Page for Notifications](#write-a-react-page-for-notifications)
-  - [ ] [Run DynamoDB Local Container and ensure it works](#run-dynamodb-local-container-and-ensure-it-works)
-  - [ ] [Run Postgres Container and ensure it works](#run-postgres-container-and-ensure-it-works)
+  - [x] [Run DynamoDB Local Container and ensure it works](#run-dynamodb-local-container-and-ensure-it-works)
+  - [x] [Run Postgres Container and ensure it works](#run-postgres-container-and-ensure-it-works)
 - [**EXTRA CHALLENGES**](#extra-challenges)
   - [ ] [Run the dockerfile CMD as an external script](#run-the-dockerfile-cmd-as-an-external-script)
   - [ ] [Push and tag a image to DockerHub](#push-and-tag-a-image-to-dockerhub-they-have-a-free-tier)
@@ -240,7 +240,11 @@
 
 ### Run DynamoDB Local Container and ensure it works
 
+<img width="960" alt="HW wk1 pt2 dynamoDB local" src="https://user-images.githubusercontent.com/64080430/221187140-c98ec391-566d-4d8c-8d01-2912ed4600ac.png">
+
 ### Run Postgres Container and ensure it works
+
+<img width="960" alt="HW wk1 pt2 postgres" src="https://user-images.githubusercontent.com/64080430/221187156-f6efa472-e2ad-4534-8d97-7929da10aacb.png">
 
 ## **EXTRA CHALLENGES**
 
