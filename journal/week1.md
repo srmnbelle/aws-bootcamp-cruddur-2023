@@ -38,7 +38,7 @@
 - Instructional material: [omenking's Week 1 Journal](https://github.com/omenking/aws-bootcamp-cruddur-2023/blob/week-1/journal/week1.md)
 - Containerize Backend
   - Initial set-up
-    ```
+    ```sh
     cd backend-flask
     pip3 install -r requirements.txt
     export FRONTEND_URL="*"
@@ -66,10 +66,6 @@
 
 - Just a reminder to commit edits ?
 
-### Pre-recorded | [Top 10 Docker Container Security Best Practices with Tutorial](https://www.youtube.com/watch?v=OjZz4D0B-cA&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
-
-- TO BE WATCHED
-
 ### Pre-recorded | [Week 1 - Create the notification feature (Backend and Front)](https://www.youtube.com/watch?v=k-_o0cCpksk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=27)
 
 - OpenAPI Swagger
@@ -92,7 +88,7 @@
 
     - Add the lines
 
-      ```
+      ```py
       from services.notifications_activities import *
 
       @app.route("/api/activities/notifications", methods=['GET'])
@@ -112,7 +108,7 @@
 
     - Add the lines
 
-      ```
+      ```js
       import NotificationsFeedPage from './pages/NotificationsFeedPage';
 
       {
@@ -126,7 +122,7 @@
     - Copy content from `HomeFeedPage.js`
     - Change the text from "Home" to "Notifications" of the corresponding lines
 
-    ```
+    ```js
     import './NotificationsFeedPage.css';
 
     export default function NotificationsFeedPage() {
@@ -143,17 +139,103 @@
 
 ### Pre-recorded | [Week 1 - DynamoDB and Postgres vs Docker](https://www.youtube.com/watch?v=CbQNMaa6zTg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=28)
 
+- DynamoDB **Local** - [set-up guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html)
+
+  - emulation of DynamoDB to interact faster
+
+- Initial Set-up
+  - Open `docker-composer.yml` file
+  - Append the Postgres and DynamoDB Local code sections
+    ```yml
+    dynamodb-local:
+      user: root
+      command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ./data"
+      image: "amazon/dynamodb-local:latest"
+      container_name: dynamodb-local
+      ports:
+        - "8000:8000"
+      volumes:
+        - "./docker/dynamodb:/home/dynamodblocal/data"
+      working_dir: /home/dynamodblocal
+    db:
+      image: postgres:13-alpine
+      restart: always
+      environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=password
+      ports:
+        - "5432:5432"
+      volumes:
+        - db:/var/lib/postgresql/data
+    ```
+  - Append the volumes section at the end
+    ```yml
+    volumes:
+      db:
+        driver: local
+    ```
+- Running and testing DynamoDB Local
+  - Right click the .yml file to `Compose Up`
+  - Check if AWS CLI commands works by typing `aws`
+  - Test responses using AWS CLI commands - [/100DaysOfCloud reference](https://github.com/100DaysOfCloud/challenge-dynamodb-local)
+    - Create a table
+    - Create an item
+    - List Tables
+    - Get Records
+    ```
+    aws dynamodb scan --table-name Music --query "Items" --endpoint-url http://localhost:8000
+    ```
+- Running and testing Postgres
+  - Install the postgres client into Gitpod
+    - Open `.gitpod.yml` file
+    - Add under `tasks:`
+    ```yml
+    - name: postgres
+      init: |
+        curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg
+        echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
+        sudo apt update
+        sudo apt install -y postgresql-client-13 libpq-dev
+    ```
+    - Run each commands by line in terminal
+  - Create the standard tables in Postgres database
+    - Install the PostgreSQL extension
+    - Open the Database Explorer
+    - Add connection using + button
+      - Select `PostgresSQL` tab
+      - Edit name to "database connection"
+      - Change password to "password"
+      - Remove "special connection database" auto-filled name
+  - Test `psql`
+    - Debugging
+      - `Compose down` the docker-compose.yml file
+      - `Compose up` again
+    - Use `psql -Upostgres --host localhost`
+      - Type in "password"
+      - Test commands
+        - `\l` to show the standard tables
+        - `\q` to quit
+
+### Pre-recorded | [Top 10 Docker Container Security Best Practices with Tutorial](https://www.youtube.com/watch?v=OjZz4D0B-cA&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
+
+- TO BE WATCHED
+
+### Pre-recorded | [AWS Bootcamp Week 1 - Gitpod, Github Codespaces, AWS Cloud9 and Cloudtrail](https://www.youtube.com/watch?v=OAMHu1NiYoI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
+
 - TO BE WATCHED
 
 ## **ASSIGNMENTS**
 
 ### Document the Notification Endpoint for the OpenAPI Document
+
 <img width="960" alt="HW1 notifications" src="https://user-images.githubusercontent.com/64080430/219949125-6f75f2a7-0660-4534-9b1c-d95945a9c247.png">
 
 ### Write a Flask Backend Endpoint for Notifications
+
 <img width="580" alt="HW1 backend endpoint" src="https://user-images.githubusercontent.com/64080430/219949130-b621c885-ef69-4f63-8d57-1ac87956235a.png">
 
 ### Write a React Page for Notifications
+
 <img width="859" alt="HW1 frontend endpoint" src="https://user-images.githubusercontent.com/64080430/219949133-bcc0ca54-e50b-4700-bd56-259090a3ae81.png">
 
 ### Run DynamoDB Local Container and ensure it works
