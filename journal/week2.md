@@ -17,7 +17,7 @@
 
 - Personal thoughts: I LOVE Jessica and Andrew's **energy** and passion on teaching this instrumentation topic 🔥
 - Distributed tracing
-  - modern standard on "observability"
+  - modern standard on "observability" (hot buzz word for your resume)
   - a story of what's happening
     - "trace" - the story
     - "span" - every row, has start time and duration, repesents a single unit of work of as apart of serving a request
@@ -91,7 +91,7 @@
   - Do `npm i`
 - Compose up the `docker-compose.yml`
   - Add to `gitpod.yml` to unlock 3000 and 4567 ports by default
-    ````
+    ```yml
     ports:
       - name: frontend
         port: 3000
@@ -103,8 +103,7 @@
       - name: xray-daemon
         port: 2000
         visibility: public
-        ```
-    ````
+    ```
 - Open Cruddur app
 
   - Open link using port 3000
@@ -123,10 +122,42 @@
     ```
 
   - Following the livestream, `env | grep HONEY` shows nothing for me. So I had to export my API keys again. Docker logs for my back-end also show spans but few seconds it returns:
-    ```
+    ```bash
     Failed to export batch code: 401, reason: {"message":"missing 'x-honeycomb-team' header"}
     ```
-  -
+  - ⭐ Committing changes to git, closing gitpod, `npm i` on frontend, composing up the .yml SOLVED IT
+
+- Add spans and attributes
+
+  - [Acquiring a tracer](https://docs.honeycomb.io/getting-data-in/opentelemetry/python/#acquiring-a-tracer)
+    - Open `/backend-flask/services/home_activities.py`
+    - Add the lines:
+      ```py
+      # Acquiring tracer
+      from opentelemetry import trace
+      tracer = trace.get_tracer("home.activities")
+      ```
+  - [Create the span](https://docs.honeycomb.io/getting-data-in/opentelemetry/python/#creating-spans)
+
+    - Add the lines under the run() function:
+
+      ```py
+      # Creating a span
+      with tracer.start_as_current_span("home-activities-mock-data"):
+      ```
+
+  - [Add attributes](https://docs.honeycomb.io/getting-data-in/opentelemetry/python/#adding-attributes-to-spans)
+
+    - Add the lines:
+
+    ```py
+    span = trace.get_current_span()
+    # now statement here
+    span.set_attribute("app.now", now.isoformat())
+    span.set_attribute("app.result_length", len(results))
+    ```
+
+    - Tab matters 😅
 
 ### Pre-recorded |
 
