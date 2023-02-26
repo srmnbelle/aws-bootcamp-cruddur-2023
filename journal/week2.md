@@ -15,6 +15,7 @@
 
 ### Live Stream | [FREE AWS Cloud Project Bootcamp (Week 2) - Distributed Tracing](https://www.youtube.com/watch?v=2GD9xCzRId4)
 
+- Personal thoughts: I LOVE Jessica and Andrew's **energy** and passion on teaching this instrumentation topic 🔥
 - Distributed tracing
   - modern standard on "observability"
   - a story of what's happening
@@ -30,7 +31,7 @@
 
   - Log-in to [honeycomb](honeycomb.io)
   - Create new environment
-  - Save your API key and service name to Gitpod
+  - Save your API key to Gitpod
 
     ```bash
     export HONEYCOMB_API_KEY="<API key here>"
@@ -85,9 +86,26 @@
       RequestsInstrumentor().instrument()
       ```
 
-  - asd
-
-- some task
+- Configure front-end
+  - Change directory to `/frontend-react-js`
+  - Do `npm i`
+- Compose up the `docker-compose.yml`
+  - Add to `gitpod.yml` to unlock 3000 and 4567 ports by default
+    ````
+    ports:
+      - name: frontend
+        port: 3000
+        onOpen: open-browser
+        visibility: public
+      - name: backend
+        port: 4567
+        visibility: public
+      - name: xray-daemon
+        port: 2000
+        visibility: public
+        ```
+    ````
+-
 
 ### Pre-recorded |
 
