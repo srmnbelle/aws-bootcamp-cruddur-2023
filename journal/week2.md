@@ -105,7 +105,28 @@
         visibility: public
         ```
     ````
--
+- Open Cruddur app
+
+  - Open link using port 3000
+  - Open link using port 4567 and append `/api/activities/home`
+
+- Troubleshooting
+
+  - Add to `app.py`
+
+    ```py
+    from opentelemetry.sdk.trace.export import ConsoleSpanExporter, SimpleSpanProcessor
+
+    # Show this in the logs within the backend-flask app (STDOUT)
+    simple_processor = SimpleSpanProcessor(ConsoleSpanExporter())
+    provider.add_span_processor(simple_processor)
+    ```
+
+  - Following the livestream, `env | grep HONEY` shows nothing for me. So I had to export my API keys again. Docker logs for my back-end also show spans but few seconds it returns:
+    ```
+    Failed to export batch code: 401, reason: {"message":"missing 'x-honeycomb-team' header"}
+    ```
+  -
 
 ### Pre-recorded |
 
