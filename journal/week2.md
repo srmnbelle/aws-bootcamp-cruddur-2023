@@ -7,9 +7,9 @@
   - [ ] [2]()
   - [ ] [3]()
 - [**EXTRA CHALLENGES**](#extra-challenges)
-  - [ ] [1]()
-  - [ ] [2]()
-  - [ ] [3]()
+  - [ ] [Instrument Honeycomb for the frontend-application](#instrument-honeycomb-for-the-frontend-application-to-observe-network-latency-between-frontend-and-backendhard)
+  - [ ] [Add custom instrumentation to Honeycomb](#add-custom-instrumentation-to-honeycomb-to-add-more-attributes-eg-userid-add-a-custom-span)
+  - [ ] [Run custom queries in Honeycomb](#run-custom-queries-in-honeycomb-and-save-them-later-eg-latency-by-userid-recent-traces)
 
 ## **LECTURES**
 
@@ -171,8 +171,14 @@
 
 ## **EXTRA CHALLENGES**
 
-### 1
+### Instrument Honeycomb for the frontend-application to observe network latency between frontend and backend [HARD]
 
-### 2
+- To test latency between frontend and backend
 
-### 3
+### Add custom instrumentation to Honeycomb to add more attributes eg. UserId, Add a custom span
+
+- Add attribute with context, how it is useful
+
+### Run custom queries in Honeycomb and save them later eg. Latency by UserID, Recent Traces
+
+- Done in livestream, try others then save them
