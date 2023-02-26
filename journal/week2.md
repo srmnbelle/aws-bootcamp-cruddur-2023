@@ -7,7 +7,7 @@
   - [ ] [2]()
   - [ ] [3]()
 - [**EXTRA CHALLENGES**](#extra-challenges)
-  - [ ] [Instrument Honeycomb for the frontend-application](#instrument-honeycomb-for-the-frontend-application-to-observe-network-latency-between-frontend-and-backendhard)
+  - [ ] [Instrument Honeycomb for the frontend application](#instrument-honeycomb-for-the-frontend-application-to-observe-network-latency-between-frontend-and-backend-hard)
   - [ ] [Add custom instrumentation to Honeycomb](#add-custom-instrumentation-to-honeycomb-to-add-more-attributes-eg-userid-add-a-custom-span)
   - [ ] [Run custom queries in Honeycomb](#run-custom-queries-in-honeycomb-and-save-them-later-eg-latency-by-userid-recent-traces)
 
