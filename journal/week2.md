@@ -166,7 +166,14 @@
 
 ### Instrument Honeycomb with OTEL
 
-- to upload
+<img width="955" alt="livestream logs backend" src="https://user-images.githubusercontent.com/64080430/221867085-ccabfff9-37a9-4dad-89e5-6a5c34b478a9.png">
+
+> Docker logs at backend
+
+<img width="459" alt="livestream honeycomb data - tracer with span" src="https://user-images.githubusercontent.com/64080430/221867133-56ecac7c-8782-4827-8916-ac56d10b1a39.png">
+
+> Honeycomb trace data with span
+
 
 ### Instrument AWS X-Ray
 
