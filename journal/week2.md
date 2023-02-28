@@ -3,10 +3,10 @@
 ## **HW Checklist**
 
 - [**REQUIRED**](#assignments)
-  - [ ] [Instrument Honeycomb with OTEL]()
-  - [ ] [Instrument AWS X-Ray]()
-  - [ ] [Configure custom logger to send to CloudWatch Logs]()
-  - [ ] [Integrate Rollbar and capture and error]()
+  - [x] [Instrument Honeycomb with OTEL](#instrument-honeycomb-with-otel)
+  - [ ] [Instrument AWS X-Ray](#instrument-aws-x-ray)
+  - [ ] [Configure custom logger to send to CloudWatch Logs](#configure-custom-logger-to-send-to-cloudwatch-logs)
+  - [ ] [Integrate Rollbar and capture and error](#integrate-rollbar-and-capture-and-error)
 - [**EXTRA CHALLENGES**](#extra-challenges)
   - [ ] [Instrument Honeycomb for the frontend application](#instrument-honeycomb-for-the-frontend-application-to-observe-network-latency-between-frontend-and-backend-hard)
   - [ ] [Add custom instrumentation to Honeycomb](#add-custom-instrumentation-to-honeycomb-to-add-more-attributes-eg-userid-add-a-custom-span)
