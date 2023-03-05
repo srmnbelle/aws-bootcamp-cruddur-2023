@@ -163,7 +163,7 @@
 ### Additional Instructions | [Week 2 Instrument XRay](https://www.youtube.com/watch?v=n2DTsuBrD_A&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=33&t=1s)
 
 - Xray - AWS built-in solution similar to honeycomb
-- AWS XRay APIs reference [here](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html)
+- AWS XRay APIs reference here: [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html) and [github](https://github.com/aws/aws-xray-sdk-python)
 - Middleware - "software" between application and request for filtering, post-processing, or formatting
 
 - Set-up
@@ -230,7 +230,15 @@
     AWS_XRAY_DAEMON_ADDRESS: "xray-daemon:2000"
     ```
 
-  -
+- Debugging
+  - `Compose Up` the `docker-compose.yml` file
+    - backend-flask will not be running; View logs using docker extension will show
+      > NameError: name 'app' is not defined
+      - Move the line `XRayMiddleware(app, xray_recorder)` under `app = Flask(__name__)`
+    - unfortunately, my frontend-react-js is also not running; View logs using docker extension shows
+      > sh: 1: react-scripts: not found
+      - `cd frontend-react-js` and `npm i`
+  - Check if being logged by clicking `View Logs` of aws-xray-daemon in Docker extension or by viewing through AWS website under CloudWatch/XRay traces/Traces menu
 
 ### Additional Instructions | [Week 2 CloudWatch Logs](https://www.youtube.com/watch?v=ipdFizZjOF4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=34&t=1s)
 
