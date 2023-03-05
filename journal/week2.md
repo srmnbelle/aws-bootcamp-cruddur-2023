@@ -4,7 +4,8 @@
 
 - [**REQUIRED**](#assignments)
   - [x] [Instrument Honeycomb with OTEL](#instrument-honeycomb-with-otel)
-  - [ ] [Instrument AWS X-Ray](#instrument-aws-x-ray)
+  - [x] [Instrument AWS X-Ray](#instrument-aws-x-ray)
+  - [x] [Instrument AWS X-Ray Subsegments](#instrument-aws-x-ray-subsegments)
   - [ ] [Configure custom logger to send to CloudWatch Logs](#configure-custom-logger-to-send-to-cloudwatch-logs)
   - [ ] [Integrate Rollbar and capture and error](#integrate-rollbar-and-capture-and-error)
 - [**EXTRA CHALLENGES**](#extra-challenges)
@@ -301,7 +302,13 @@
 
 ### Instrument AWS X-Ray
 
-- pending
+<img width="959" alt="XRAY aws traces spans" src="https://user-images.githubusercontent.com/64080430/222966985-d667db3b-5266-44e2-9694-c2eb743d09bb.png">
+
+
+### Instrument AWS X-Ray Subsegments
+
+<img width="960" alt="XRAY subsegment mock-data" src="https://user-images.githubusercontent.com/64080430/222966956-cc4b13fc-2db8-49fe-a62d-ca50905c049a.png">
+> `mock-data` now shows on AWS XRay traces UI
 
 ### Configure custom logger to send to CloudWatch Logs
 
