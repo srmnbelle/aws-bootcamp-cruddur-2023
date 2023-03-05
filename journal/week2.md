@@ -231,6 +231,7 @@
     ```
 
 - Debugging
+
   - `Compose Up` the `docker-compose.yml` file
     - backend-flask will not be running; View logs using docker extension will show
       > NameError: name 'app' is not defined
@@ -239,6 +240,9 @@
       > sh: 1: react-scripts: not found
       - `cd frontend-react-js` and `npm i`
   - Check if being logged by clicking `View Logs` of aws-xray-daemon in Docker extension or by viewing through AWS website under CloudWatch/XRay traces/Traces menu
+
+- [Starting a custom sub-segment](https://github.com/aws/aws-xray-sdk-python#start-a-custom-segmentsubsegment)
+  -
 
 ### Additional Instructions | [Week 2 CloudWatch Logs](https://www.youtube.com/watch?v=ipdFizZjOF4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=34&t=1s)
 
