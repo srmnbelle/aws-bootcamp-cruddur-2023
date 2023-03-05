@@ -162,7 +162,8 @@
 
 ### Additional Instructions | [Week 2 Instrument XRay](https://www.youtube.com/watch?v=n2DTsuBrD_A&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=33&t=1s)
 
-- To be watched
+- Xray - AWS built-in solution similar to honeycomb
+- Code npm install in `.gitpod.yml`
 
 ### Additional Instructions | [Week 2 CloudWatch Logs](https://www.youtube.com/watch?v=ipdFizZjOF4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=34&t=1s)
 
