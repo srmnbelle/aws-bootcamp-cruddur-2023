@@ -246,7 +246,22 @@
 
 ### Additional Instructions | [ Week 2 - X-Ray Subsegments Solved ](https://www.youtube.com/watch?v=4SGTW0Db5y0&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=38)
 
-- To be watched
+- Reference article: [How to add custom X-Ray Segments for Containerised Flask Application](https://olley.hashnode.dev/aws-free-cloud-bootcamp-instrumenting-aws-x-ray-subsegments)
+- Preliminaries
+  - `npm i` the frontend
+  - `compose up` the docker file
+  - Open the port 3000 and append /@username
+  - `view logs` the aws-xray-daemon
+- Debugging:
+  - Add the lines in `app.py`
+    ```python
+    @xray_recorder.capture('activities_home') # under /api/activities/home
+    @xray_recorder.capture('activities_users') # under /api/activities/@<string:handle>
+    @xray_recorder.capture('activities_show') # under /api/activities/<string:activity_uuid>
+    ```
+  - Refresh the port 3000 link a lot then check AWS XRay traces site
+  - Add `xray_recorder.end_subsegment()` in `user_activities.py`
+  - `mock-data` span should show in the AWS traces site!
 
 ### Additional Instructions | [Week 2 CloudWatch Logs](https://www.youtube.com/watch?v=ipdFizZjOF4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=34&t=1s)
 
