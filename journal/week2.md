@@ -160,7 +160,37 @@
 
     - Tab matters 😅
 
-### Pre-recorded |
+### Additional Instructions | [Week 2 Instrument XRay](https://www.youtube.com/watch?v=n2DTsuBrD_A&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=33&t=1s)
+
+- To be watched
+
+### Additional Instructions | [Week 2 CloudWatch Logs](https://www.youtube.com/watch?v=ipdFizZjOF4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=34&t=1s)
+
+- To be watched
+
+### Additional Instructions | [Week 2 - Rollbar](https://www.youtube.com/watch?v=xMBDAb5SEU4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=36)
+
+- To be watched
+
+### Additional Instructions | [Week 2- Github Codespaces Crash Course](https://www.youtube.com/watch?v=L9KKBXgKopA&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=37)
+
+- To be watched
+
+### Additional Instructions | [ Week 2 - X-Ray Subsegments Solved ](https://www.youtube.com/watch?v=4SGTW0Db5y0&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=38)
+
+- To be watched
+
+### Security Session | [Observability vs Monitoring Explained in AWS](https://www.youtube.com/watch?v=bOf4ITxAcXc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=32)
+
+- To be watched
+
+### Pricing Session | [AWS Bootcamp Week 2 - Honeycomb, Rollbar, AWS X-Ray and AWS Cloudwatch Logs pricing considerations](https://www.youtube.com/watch?v=2W3KeqCjtDY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=39)
+
+- To be watched
+
+### Cloud Career Session | [Pick the right cloud role: A beginners guide!](https://www.youtube.com/watch?v=E0haz6mymxY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=35&t=308s)
+
+- To be watched
 
 ## **ASSIGNMENTS**
 
@@ -173,7 +203,6 @@
 <img width="459" alt="livestream honeycomb data - tracer with span" src="https://user-images.githubusercontent.com/64080430/221867133-56ecac7c-8782-4827-8916-ac56d10b1a39.png">
 
 > Honeycomb trace data with span
-
 
 ### Instrument AWS X-Ray
 
