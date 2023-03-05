@@ -163,7 +163,74 @@
 ### Additional Instructions | [Week 2 Instrument XRay](https://www.youtube.com/watch?v=n2DTsuBrD_A&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=33&t=1s)
 
 - Xray - AWS built-in solution similar to honeycomb
-- Code npm install in `.gitpod.yml`
+- AWS XRay APIs reference [here](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html)
+- Middleware - "software" between application and request for filtering, post-processing, or formatting
+
+- Set-up
+
+  - Code npm install in `.gitpod.yml`
+  - Add `aws-xray-sdk` to `requirements.txt` and run `pip install -r requirements.txt`
+  - Add the ff code to `app.py`
+
+    ```py
+    # AWS XRay
+    from aws_xray_sdk.core import xray_recorder
+    from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+
+    xray_url = os.getenv("AWS_XRAY_URL")
+    xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
+    XRayMiddleware(app, xray_recorder)
+    ```
+
+  - Create `xray.json` under aws/json folder with content:
+    ```json
+    {
+      "SamplingRule": {
+        "RuleName": "Cruddur",
+        "ResourceARN": "*",
+        "Priority": 9000,
+        "FixedRate": 0.1,
+        "ReservoirSize": 5,
+        "ServiceName": "backend-flask",
+        "ServiceType": "*",
+        "Host": "*",
+        "HTTPMethod": "*",
+        "URLPath": "*",
+        "Version": 1
+      }
+    }
+    ```
+  - CREATE GROUP using AWS CLI; then double-check if reflected in AWS UI [here](https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#xray:settings/groups)
+    ```bash
+    aws xray create-group \
+    --group-name "Cruddur" \
+    --filter-expression "service(\"backend-flask\")"
+    ```
+  - CREATE SAMPLING RULE using AWS CLI
+    ```bash
+    aws xray create-sampling-rule --cli-input-json file://aws/json/xray.json
+    ```
+  - Add daemon service to `docker-compose.yml`
+
+    ```yml
+    # this under frontend-react-js services section
+    xray-daemon:
+      image: "amazon/aws-xray-daemon"
+      environment:
+        AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+        AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+        AWS_REGION: "us-east-1"
+      command:
+        - "xray -o -b xray-daemon:2000"
+      ports:
+        - 2000:2000/udp
+
+    # this under backend-flask env vars:
+    AWS_XRAY_URL: "*4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}*"
+    AWS_XRAY_DAEMON_ADDRESS: "xray-daemon:2000"
+    ```
+
+  -
 
 ### Additional Instructions | [Week 2 CloudWatch Logs](https://www.youtube.com/watch?v=ipdFizZjOF4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=34&t=1s)
 
