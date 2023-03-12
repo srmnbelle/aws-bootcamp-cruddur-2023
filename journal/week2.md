@@ -7,7 +7,7 @@
   - [x] [Instrument AWS X-Ray](#instrument-aws-x-ray)
   - [x] [Instrument AWS X-Ray Subsegments](#instrument-aws-x-ray-subsegments)
   - [x] [Configure custom logger to send to CloudWatch Logs](#configure-custom-logger-to-send-to-cloudwatch-logs)
-  - [ ] [Integrate Rollbar and capture and error](#integrate-rollbar-and-capture-and-error)
+  - [x] [Integrate Rollbar and capture and error](#integrate-rollbar-and-capture-and-error)
 - [**EXTRA CHALLENGES**](#extra-challenges)
   - [ ] [Instrument Honeycomb for the frontend application](#instrument-honeycomb-for-the-frontend-application-to-observe-network-latency-between-frontend-and-backend-hard)
   - [ ] [Add custom instrumentation to Honeycomb](#add-custom-instrumentation-to-honeycomb-to-add-more-attributes-eg-userid-add-a-custom-span)
@@ -342,7 +342,9 @@
 
 ### Integrate Rollbar and capture and error
 
-- pending
+<img width="960" alt="ROLLBAR" src="https://user-images.githubusercontent.com/64080430/224545909-c78cedb7-c0ac-4c6f-81ba-70c1e329d5fa.png">
+
+> Viewing *intentional* error logs in Rollbar
 
 ## **EXTRA CHALLENGES**
 
