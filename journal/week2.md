@@ -298,7 +298,25 @@
 
 ### Security Session | [Observability vs Monitoring Explained in AWS](https://www.youtube.com/watch?v=bOf4ITxAcXc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=32)
 
-- To be watched
+- Logging - can be (1) on-premise logs or (2) cloud logs
+- Observability - looking at the holistic view
+- Observability vs Monitoring
+  - monitoring is the logs itself; will provide fault and recovery info
+  - observability is the entire life cycle of a program; will identify & prevent issues
+- Observability in AWS - breaking down the app into multiple processes
+- 3 pillars
+  - logs
+  - metrics - answers how/why/what
+  - traces - identify cause
+- Cloudtrail -> Cloudwatch demo 
+- Steps for security metrics/logs for tracing
+  - Use of threat model - phishing email, ddos, distributed nano attacks, malware
+  - Note industry standards/techniques by hacker; documentation: "attack mitter"
+  - Identify instrumentation agents - cloudwatch, security hub, etc
+- Central observability platform
+  - AWS Security hub & eventbridge
+  - Just design a event-driven architecture - analogy: toll gates
+  - Others: SIEM? Open-source dashboards?
 
 ### Pricing Session | [AWS Bootcamp Week 2 - Honeycomb, Rollbar, AWS X-Ray and AWS Cloudwatch Logs pricing considerations](https://www.youtube.com/watch?v=2W3KeqCjtDY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=39)
 
