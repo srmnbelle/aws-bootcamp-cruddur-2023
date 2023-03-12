@@ -266,7 +266,16 @@
 
 ### Additional Instructions | [Week 2 CloudWatch Logs](https://www.youtube.com/watch?v=ipdFizZjOF4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=34&t=1s)
 
-- To be watched
+- Reference instructions: [omenking's Week 2](https://github.com/omenking/aws-bootcamp-cruddur-2023/blob/week-2/journal/week2.md)
+- Initial Set-up
+  - Edit `requirements.txt` and RUN `pip install -r requirements.txt`
+  - Edit `app.py`
+  - Edit `home_activities.py` and ADD line `LOGGER.info("HomeActivities")`
+  - Edit `docker-compose.yml`
+- Debugging
+  - `compose up` and open port 4567 and append `/api/activities/home`
+    - Will show error: `NameError: name 'LOGGER' is not defined`
+    - Following the video, changing LOGGER to logger, returns `TypeError: unsupported operand type(s) for @: 'Response' and 'method'`
 
 ### Additional Instructions | [Week 2 - Rollbar](https://www.youtube.com/watch?v=xMBDAb5SEU4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=36)
 
@@ -304,10 +313,10 @@
 
 <img width="959" alt="XRAY aws traces spans" src="https://user-images.githubusercontent.com/64080430/222966985-d667db3b-5266-44e2-9694-c2eb743d09bb.png">
 
-
 ### Instrument AWS X-Ray Subsegments
 
 <img width="960" alt="XRAY subsegment mock-data" src="https://user-images.githubusercontent.com/64080430/222966956-cc4b13fc-2db8-49fe-a62d-ca50905c049a.png">
+
 > `mock-data` now shows on AWS XRay traces UI
 
 ### Configure custom logger to send to CloudWatch Logs
