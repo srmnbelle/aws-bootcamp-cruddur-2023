@@ -269,29 +269,39 @@
 - Reference instructions: [omenking's Week 2](https://github.com/omenking/aws-bootcamp-cruddur-2023/blob/week-2/journal/week2.md)
 - Initial Set-up
   - Edit `requirements.txt` and RUN `pip install -r requirements.txt`
-  - Edit `app.py`
+  - Edit `app.py` following the reference instructions
   - Edit `home_activities.py` and ADD line `LOGGER.info("HomeActivities")`
   - Edit `docker-compose.yml`
+  - `Compose up` and open port 4567 and append `/api/activities/home`
 - Debugging
-  - `compose up` and open port 4567 and append `/api/activities/home`
-    - Will show error: `NameError: name 'LOGGER' is not defined`
-    - Following the video, changing LOGGER to logger, returns `TypeError: unsupported operand type(s) for @: 'Response' and 'method'`
-      - Just copy pasted the code in app.py two times 😓 OK now!
+  - Will initially show error: `NameError: name 'LOGGER' is not defined`
+  - Following the video, changing LOGGER to logger, my code still returns `TypeError: unsupported operand type(s) for @: 'Response' and 'method'`
+    - Just copy pasted the code in app.py two times 😓 OK now!
 - Disable codelines to save spend.
 
 ### Additional Instructions | [Week 2 - Rollbar](https://www.youtube.com/watch?v=xMBDAb5SEU4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=36)
 
-- To be watched
-
-### Additional Instructions | [Week 2- Github Codespaces Crash Course](https://www.youtube.com/watch?v=L9KKBXgKopA&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=37)
-
-- To be watched
+- Reference instructions: [omenking's Week 2](https://github.com/omenking/aws-bootcamp-cruddur-2023/blob/week-2/journal/week2.md)
+- Initial Set-up
+  - Create Rollbar account, select Flask SDK, note your access token
+  - Edit `requirements.txt` and RUN `pip install -r requirements.txt`
+  - Edit `app.py` following the reference instructions
+  - `Compose up` and open port 4567 and append `/api/activities/home`
+- Debugging
+  - Move the `@app.before_first_request` code block lower
+  - Check port 4567 and append `/rollbar/test` if showing Hello World!
+  - Attach shell to backend through docker and check env for rollbar access tokens
+    - Commit to git and restart gitpod
 
 ### Security Session | [Observability vs Monitoring Explained in AWS](https://www.youtube.com/watch?v=bOf4ITxAcXc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=32)
 
 - To be watched
 
 ### Pricing Session | [AWS Bootcamp Week 2 - Honeycomb, Rollbar, AWS X-Ray and AWS Cloudwatch Logs pricing considerations](https://www.youtube.com/watch?v=2W3KeqCjtDY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=39)
+
+- To be watched
+
+### Additional Instructions | [Week 2- Github Codespaces Crash Course](https://www.youtube.com/watch?v=L9KKBXgKopA&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=37)
 
 - To be watched
 
