@@ -308,7 +308,7 @@
   - logs
   - metrics - answers how/why/what
   - traces - identify cause
-- Cloudtrail -> Cloudwatch demo 
+- Cloudtrail -> Cloudwatch demo
 - Steps for security metrics/logs for tracing
   - Use of threat model - phishing email, ddos, distributed nano attacks, malware
   - Note industry standards/techniques by hacker; documentation: "attack mitter"
@@ -320,7 +320,10 @@
 
 ### Pricing Session | [AWS Bootcamp Week 2 - Honeycomb, Rollbar, AWS X-Ray and AWS Cloudwatch Logs pricing considerations](https://www.youtube.com/watch?v=2W3KeqCjtDY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=39)
 
-- To be watched
+- Honeycomb - freetier allows 20M events/month
+- Rollbar - 5k events/month
+- AWS X-ray - 100k traces/month; pricing differs depending if traces/scanning
+- AWS Cloudwatch - 5GB log data; note to disable!
 
 ### Additional Instructions | [Week 2- Github Codespaces Crash Course](https://www.youtube.com/watch?v=L9KKBXgKopA&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=37)
 
@@ -362,7 +365,7 @@
 
 <img width="960" alt="ROLLBAR" src="https://user-images.githubusercontent.com/64080430/224545909-c78cedb7-c0ac-4c6f-81ba-70c1e329d5fa.png">
 
-> Viewing *intentional* error logs in Rollbar
+> Viewing _intentional_ error logs in Rollbar
 
 ## **EXTRA CHALLENGES**
 
