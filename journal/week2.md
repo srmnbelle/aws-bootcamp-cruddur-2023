@@ -289,9 +289,12 @@
   - `Compose up` and open port 4567 and append `/api/activities/home`
 - Debugging
   - Move the `@app.before_first_request` code block lower
-  - Check port 4567 and append `/rollbar/test` if showing Hello World!
+  - Check port 4567 and append `/rollbar/test` if showing `Hello World!`
   - Attach shell to backend through docker and check env for rollbar access tokens
     - Commit to git and restart gitpod
+    - ⭐ ADD `ROLLBAR_ACCESS_TOKEN: "${ROLLBAR_ACCESS_TOKEN}"` to the `docker-compose.yml`
+      - You should see the rollbar items on the website now!
+  - Remove `return` in `home_activities.py` to test error logs in rollbar - and fix before committing to git
 
 ### Security Session | [Observability vs Monitoring Explained in AWS](https://www.youtube.com/watch?v=bOf4ITxAcXc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=32)
 
