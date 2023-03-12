@@ -276,6 +276,8 @@
   - `compose up` and open port 4567 and append `/api/activities/home`
     - Will show error: `NameError: name 'LOGGER' is not defined`
     - Following the video, changing LOGGER to logger, returns `TypeError: unsupported operand type(s) for @: 'Response' and 'method'`
+      - Just copy pasted the code in app.py two times 😓 OK now!
+- Disable codelines to save spend.
 
 ### Additional Instructions | [Week 2 - Rollbar](https://www.youtube.com/watch?v=xMBDAb5SEU4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=36)
 
