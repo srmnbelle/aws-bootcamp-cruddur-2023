@@ -6,7 +6,7 @@
   - [x] [Instrument Honeycomb with OTEL](#instrument-honeycomb-with-otel)
   - [x] [Instrument AWS X-Ray](#instrument-aws-x-ray)
   - [x] [Instrument AWS X-Ray Subsegments](#instrument-aws-x-ray-subsegments)
-  - [ ] [Configure custom logger to send to CloudWatch Logs](#configure-custom-logger-to-send-to-cloudwatch-logs)
+  - [x] [Configure custom logger to send to CloudWatch Logs](#configure-custom-logger-to-send-to-cloudwatch-logs)
   - [ ] [Integrate Rollbar and capture and error](#integrate-rollbar-and-capture-and-error)
 - [**EXTRA CHALLENGES**](#extra-challenges)
   - [ ] [Instrument Honeycomb for the frontend application](#instrument-honeycomb-for-the-frontend-application-to-observe-network-latency-between-frontend-and-backend-hard)
@@ -323,7 +323,9 @@
 
 ### Configure custom logger to send to CloudWatch Logs
 
-- pending
+<img width="957" alt="CLOUDWATCH" src="https://user-images.githubusercontent.com/64080430/224535413-1b15f565-d35f-46bf-9ef9-7d58fccb22ef.png">
+
+> Verify logs at AWS Cloudwatch app
 
 ### Integrate Rollbar and capture and error
 
