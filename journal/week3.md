@@ -68,7 +68,7 @@
 
 ### Setup Cognito User Pool
 
-- to do
+image.png
 
 ### Implement Custom Signin Page
 
