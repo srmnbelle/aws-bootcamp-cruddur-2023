@@ -4,7 +4,7 @@
 
 - [**REQUIRED**](#assignments)
   - [x] [Setup Cognito User Pool](#setup-cognito-user-pool)
-  - [ ] [Implement Custom Signin Page](#implement-custom-signin-page)
+  - [x] [Implement Custom Signin Page](#implement-custom-signin-page)
   - [ ] [Implement Custom Signup Page](#implement-custom-signup-page)
   - [ ] [Implement Custom Confirmation Page](#implement-custom-confirmation-page)
   - [ ] [Implement Custom Recovery Page](#implement-custom-recovery-page)
@@ -119,7 +119,8 @@
 
 ### Implement Custom Signin Page
 
-- to do
+<img width="959" alt="singin page landing page with username" src="https://user-images.githubusercontent.com/64080430/226173316-34bec29a-32f0-4435-8f75-ed4e08676287.png">
+
 
 ### Implement Custom Signup Page
 
