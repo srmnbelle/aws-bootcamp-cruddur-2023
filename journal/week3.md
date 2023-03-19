@@ -98,8 +98,11 @@
   - Create new user pool again
     - STEP 1 OF 6: Under `Cognito user pool sign-in options`, select ONLY `Email`
     - Reinitialize env var in `docker-compose.yml`
-  - Done
-  
+  - Done!
+- Recovery Page
+  - Under `/frontend-react-js/src/pages`, open `RecoveryPage.js`
+  - Paste the code blocks from week 3 reference instruction
+  - Done!
 
 ### Additional Instructions | [Week 3 Congito JWT Server side Verify](https://www.youtube.com/watch?v=d079jccoG-M&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=43)
 
