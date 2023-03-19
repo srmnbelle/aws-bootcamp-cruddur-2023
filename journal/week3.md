@@ -3,7 +3,7 @@
 ## **HW Checklist**
 
 - [**REQUIRED**](#assignments)
-  - [ ] [Setup Cognito User Pool](#setup-cognito-user-pool)
+  - [x] [Setup Cognito User Pool](#setup-cognito-user-pool)
   - [ ] [Implement Custom Signin Page](#implement-custom-signin-page)
   - [ ] [Implement Custom Signup Page](#implement-custom-signup-page)
   - [ ] [Implement Custom Confirmation Page](#implement-custom-confirmation-page)
@@ -67,7 +67,7 @@
 ## **ASSIGNMENTS**
 
 ### Setup Cognito User Pool
-
+<img width="956" alt="create user pool" src="https://user-images.githubusercontent.com/64080430/226156584-42704154-7cd8-47cc-9509-cb0d054e709a.png">
 
 ### Implement Custom Signin Page
 
