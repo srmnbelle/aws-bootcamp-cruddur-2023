@@ -5,9 +5,10 @@
 - [**REQUIRED**](#assignments)
   - [x] [Setup Cognito User Pool](#setup-cognito-user-pool)
   - [x] [Implement Custom Signin Page](#implement-custom-signin-page)
-  - [ ] [Implement Custom Signup Page](#implement-custom-signup-page)
-  - [ ] [Implement Custom Confirmation Page](#implement-custom-confirmation-page)
-  - [ ] [Implement Custom Recovery Page](#implement-custom-recovery-page)
+  - [x] [Implement Custom Signup Page](#implement-custom-signup-page)
+  - [x] [Implement Custom Confirmation Page](#implement-custom-confirmation-page)
+  - [x] [Implement Custom Recovery Page](#implement-custom-recovery-page)
+  - [ ] [Verify JWT token server side](#verify-jwt-token-server-side)
   - [ ] [Watch about different approaches to verifying JWTs](#watch-about-different-approaches-to-verifying-jwts)
 - [**EXTRA CHALLENGES**](#extra-challenges)
   - [ ] [Flask Middleware](#medium-decouple-the-jwt-verify-from-the-application-code-by-writing-a-flask-middleware)
@@ -140,14 +141,22 @@
 
 ### Implement Custom Signup Page
 
-- to do
+<img width="962" alt="singup page" src="https://user-images.githubusercontent.com/64080430/226181025-09db8a5c-102f-436b-88c2-04e052c82d56.png">
+<img width="959" alt="signup" src="https://user-images.githubusercontent.com/64080430/226181030-d29128d5-6116-4606-8efb-c0be5bbfb0d5.png">
+
 
 ### Implement Custom Confirmation Page
 
-- to do
+<img width="960" alt="confirmation page" src="https://user-images.githubusercontent.com/64080430/226181033-4763b7e0-07f4-44e7-a03e-7d3854a47975.png">
+
 
 ### Implement Custom Recovery Page
 
+<img width="958" alt="recovery" src="https://user-images.githubusercontent.com/64080430/226181037-a12f9d90-0825-4754-ac06-6d0632eca01b.png">
+<img width="958" alt="recovery successful" src="https://user-images.githubusercontent.com/64080430/226181039-b335ade6-ec5d-4d58-9ad2-a25e471f67b5.png">
+
+
+### Verify JWT token server side
 - to do
 
 ### Watch about different approaches to verifying JWTs
