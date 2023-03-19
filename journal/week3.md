@@ -20,23 +20,49 @@
 
 ### Live Stream | [Week 3 - Decentralized Authenication](https://www.youtube.com/watch?v=9obl7rVgzJw&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=40)
 
-- to be watched
+- Decentrialized Authentication
+  - mechanism to log in/out, reset our passwords
+  - to integrate in back-end application with custom log in pages
+- Amazon Cognito via web UI
+  - Under `User pools` on the left menu, click `Create user pool`
+  - STEP 1 OF 6: Under `Cognito user pool sign-in options`, select `User name` and `Email`
+  - STEP 2 OF 6: Under `Multi-factor authentication`, select `No MFA`
+  - STEP 3 OF 6: Under `Required attributes`, add `name`
+  - STEP 4 OF 6: Under `Email`, select `Send email with Cognito`
+  - STEP 5 OF 6: 
+    - Under `User pool name`, type `cruddur-user pool`
+    - Under `App client name`, type `cruddur`
+  - STEP 6 OF 6: as is
+  - Rest on default
+- AWS Amplify - used to get Cognito javascript library
 
 ### Security Session | [Amazon Cognito Security Best Practices](https://www.youtube.com/watch?v=tEJIeII66pY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=39)
 
 - to be watched
 
-### Additional Instructions | [to edit]()
+### Additional Instructions | [Week 3 Cognito Custom Pages](https://www.youtube.com/watch?v=T4X4yIzejTc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=42)
 
 - to edit
 
-### Pricing Session | [to edit]()
+### Additional Instructions | [Week 3 Congito JWT Server side Verify](https://www.youtube.com/watch?v=d079jccoG-M&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=43)
 
 - to edit
 
-### Cloud Career Session | [to edit]()
+### Additional Instructions | [Week 3 - Exploring JWTs](https://www.youtube.com/watch?v=nJjbI4BbasU&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=44)
 
 - to edit
+
+### Additional Instructions | [Week 3 Improving UI Contrast and Implementing CSS Variables for Theming](https://www.youtube.com/watch?v=m9V4SmJWoJU&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=45)
+
+- to edit
+
+### Pricing Session | [no link]()
+
+- no video in playlist
+
+### Cloud Career Session | [no link]()
+
+- no video in playlist
 
 ## **ASSIGNMENTS**
 
