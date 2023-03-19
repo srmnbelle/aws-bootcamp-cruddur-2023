@@ -49,15 +49,43 @@
       REACT_APP_AWS_USER_POOLS_ID: "" #from the user pool settings
       REACT_APP_CLIENT_ID: "" #under app integrations tab
     ```
--
-
-### Security Session | [Amazon Cognito Security Best Practices](https://www.youtube.com/watch?v=tEJIeII66pY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=39)
-
-- to be watched
+- Conditionally show components based on logged in or logged out
+  - Under `/frontend-react-js/src/pages`, open `HomeFeedPage.js`
+    - Paste the code blocks from week 3 reference instruction
+    - Some are already implemented
+  - Under `/frontend-react-js/src/components`, open `DesktopNavigation.js`
+    - Already implemented.
+  - From the `DesktopNavigation.js` CTRL+ALT+CLICK `ProfileInjo.js` to eliminate explorer navigation
+    - Paste the code blocks from week 3 reference instruction
+  - `Compose Up` the docker file
+    - port 3000: should be blank dark purple page; console saying "Uncaught Error: Both UserPoolId and ClientId are required."
+    - edit `App.js` to correct the lines
+    ```js
+    region: process.env.REACT_APP_AWS_PROJECT_REGION;
+    userPoolWebClientId: process.env.REACT_APP_CLIENT_ID;
+    ```
+- Sign in page
+  - Under `/frontend-react-js/src/pages`, open `SigninPage.js`
+    - Paste the code blocks from week 3 reference instruction
+    - Some are already implemented
+    - Change `setCognitoErrors` to `setErrors`
+    - Change `Auth.signIn` variable from username to email
+    - Check port:3000
+  - Create new user pool - initially made one has incorrect configuration
+    - STEP 3 OF 6: Under `Required attributes`, add `name` AND `preferred_username`
+    - Reinitialize env var in `docker-compose.yml`
+  - Update `onsubmit` code chunk to show `Incorrect username or password.` prompt on UI
+  - (no email received) Create new user on AWS Cognito User Pool
 
 ### Additional Instructions | [Week 3 Cognito Custom Pages](https://www.youtube.com/watch?v=T4X4yIzejTc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=42)
 
-- to edit
+- Sign in Page
+  - Using AWS CLI, do Force Change Password
+    - `cd ..` then `sudo ./aws/install`
+    - RUN `aws cognito-idp admin-set-user-password --username <INSERT USERNAME> --password <INSERT PASSWORD> --user-pool-id us-east-1_IOEdNYaQy --permanent`
+  - Change `name` and `preferred username` on AWS Cognito UI
+  - Done!
+- Sign up Page
 
 ### Additional Instructions | [Week 3 Congito JWT Server side Verify](https://www.youtube.com/watch?v=d079jccoG-M&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=43)
 
@@ -67,9 +95,13 @@
 
 - to edit
 
+### Security Session | [Amazon Cognito Security Best Practices](https://www.youtube.com/watch?v=tEJIeII66pY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=39)
+
+- to be watched
+
 ### Additional Instructions | [Week 3 Improving UI Contrast and Implementing CSS Variables for Theming](https://www.youtube.com/watch?v=m9V4SmJWoJU&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=45)
 
-- to edit
+- to be watched
 
 ### Pricing Session | [no link]()
 
