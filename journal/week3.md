@@ -79,13 +79,27 @@
 
 ### Additional Instructions | [Week 3 Cognito Custom Pages](https://www.youtube.com/watch?v=T4X4yIzejTc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=42)
 
-- Sign in Page
+- **REFERENCE INSTRUCTIONS:** [omenking's Week 3](https://github.com/omenking/aws-bootcamp-cruddur-2023/blob/week-3/journal/week3.md)
+- Sign in Page (continuation)
   - Using AWS CLI, do Force Change Password
     - `cd ..` then `sudo ./aws/install`
     - RUN `aws cognito-idp admin-set-user-password --username <INSERT USERNAME> --password <INSERT PASSWORD> --user-pool-id us-east-1_IOEdNYaQy --permanent`
   - Change `name` and `preferred username` on AWS Cognito UI
   - Done!
 - Sign up Page
+  - Under `/frontend-react-js/src/pages`, open `SignupPage.js`
+  - Paste the code blocks from week 3 reference instruction
+    - Some are already implemented
+- Confirmation Page
+  - Under `/frontend-react-js/src/pages`, open `ConfirmationPage.js`
+  - Paste the code blocks from week 3 reference instruction
+    - Some are already implemented
+- Debugging
+  - Create new user pool again
+    - STEP 1 OF 6: Under `Cognito user pool sign-in options`, select ONLY `Email`
+    - Reinitialize env var in `docker-compose.yml`
+  - Done
+  
 
 ### Additional Instructions | [Week 3 Congito JWT Server side Verify](https://www.youtube.com/watch?v=d079jccoG-M&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=43)
 
@@ -120,7 +134,6 @@
 ### Implement Custom Signin Page
 
 <img width="959" alt="singin page landing page with username" src="https://user-images.githubusercontent.com/64080430/226173316-34bec29a-32f0-4435-8f75-ed4e08676287.png">
-
 
 ### Implement Custom Signup Page
 
