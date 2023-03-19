@@ -29,12 +29,27 @@
   - STEP 2 OF 6: Under `Multi-factor authentication`, select `No MFA`
   - STEP 3 OF 6: Under `Required attributes`, add `name`
   - STEP 4 OF 6: Under `Email`, select `Send email with Cognito`
-  - STEP 5 OF 6: 
+  - STEP 5 OF 6:
     - Under `User pool name`, type `cruddur-user pool`
     - Under `App client name`, type `cruddur`
   - STEP 6 OF 6: as is
   - Rest on default
-- AWS Amplify - used to get Cognito javascript library
+- **REFERENCE INSTRUCTIONS:** [omenking's Week 3](https://github.com/omenking/aws-bootcamp-cruddur-2023/blob/week-3/journal/week3.md)
+- Install AWS Amplify - used to get Cognito javascript library
+  - Change directory `cd frontend-react-js/`
+  - Install by running `npm i aws-amplify --save`
+- Configure Amplify
+  - Under `/frontend-react-js/src/`, open `App.js`
+  - Paste the code blocks from week 3 reference instruction
+  - Set the env variables on `docker-compose.yml`:
+    ```
+      REACT_APP_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"
+      # REACT_APP_AWS_COGNITO_IDENTITY_POOL_ID: "" # not using identity pool
+      REACT_APP_AWS_COGNITO_REGION: "${AWS_DEFAULT_REGION}"
+      REACT_APP_AWS_USER_POOLS_ID: "" #from the user pool settings
+      REACT_APP_CLIENT_ID: "" #under app integrations tab
+    ```
+-
 
 ### Security Session | [Amazon Cognito Security Best Practices](https://www.youtube.com/watch?v=tEJIeII66pY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=39)
 
@@ -67,6 +82,7 @@
 ## **ASSIGNMENTS**
 
 ### Setup Cognito User Pool
+
 <img width="956" alt="create user pool" src="https://user-images.githubusercontent.com/64080430/226156584-42704154-7cd8-47cc-9509-cb0d054e709a.png">
 
 ### Implement Custom Signin Page
